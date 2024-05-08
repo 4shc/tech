@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 18</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 18</h1>
+  <small class="fecha">04.04.2024 S18-M2</small>
+
+  <article id="arrays-flat">
+    <h2>Arrays / flat()</h2>
+    <p>Se utiliza para aplanar un arreglo multidimensional, es decir, convierte un arreglo que contiene otros arreglos anidados en un solo arreglo con todos los elementos en el mismo nivel. Por ejemplo, si tenemos un arreglo que contiene varios arreglos anidados, flat() nos permite obtener un solo arreglo que contiene todos los elementos de los arreglos internos en el mismo nivel que los elementos del arreglo principal. Esto simplifica la manipulación y el procesamiento de datos en arreglos complejos.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Usando flat() - Unifica 
+const numeros = [1,2,3,5,6,[7,8,9,10,[12,45,75]]];
+console.log(numeros.flat());
+
+      </code>
+    </pre>  
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// ejemplo 2 
+const numeros2 = [1,2,3,5,6,[7,8,9,10,[12,45,75]]];
+console.log(numeros2.flat(2));
+
+      </code>
+    </pre>  
+  </article>
+
+  <article id="arrays-isArray">
+    <h2>Arrays / isArray()</h2>
+    <p>Se utiliza para verificar si un valor dado es un arreglo o no. Retorna true si el valor es un arreglo y false si no lo es. Esto es útil cuando se necesita determinar si un objeto es un arreglo antes de aplicar operaciones específicas de arreglos, como iterar sobre sus elementos o aplicar métodos de arreglos. Por ejemplo, al utilizar isArray(), se puede evitar errores al intentar acceder a métodos de arreglos en valores que no son arreglos.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+var arr1 = [1,2,3,4,5,6,7,8,9,10];
+console.log(Array.isArray(arr1));
+
+      </code>
+    </pre>  
+  </article>
+
+
+  <article id="arrays-from">
+    <h2>Arrays / from()</h2>
+    <p>Se utiliza para crear un nuevo arreglo a partir de un objeto iterable o de un objeto similar a un arreglo. Este método es útil cuando se necesita convertir objetos iterables, como cadenas de texto o arreglos similares, en arreglos reales. Por ejemplo, Array.from() puede ser usado para convertir una cadena de texto en un arreglo de caracteres o para copiar los elementos de un arreglo a otro arreglo nuevo. Además, from() permite especificar una función de mapeo para transformar los elementos durante la creación del nuevo arreglo.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+console.log(Array.from("2345456"));
+
+      </code>
+    </pre>  
+  </article>
+
+  <article id="rest-operador">
+    <h2>Operador Rest(...)</h2>
+    <p>El operador de propagación REST en JavaScript, representado por tres puntos (...), se utiliza para recoger argumentos indefinidos en funciones o para desestructurar arreglos y objetos. En el contexto de las funciones, REST permite capturar un número variable de argumentos en un solo parámetro, convirtiéndolos en un arreglo. Esto proporciona flexibilidad al definir funciones que pueden manejar cualquier cantidad de argumentos sin necesidad de especificarlos individualmente. Por otro lado, en la desestructuración de arreglos y objetos, REST permite extraer elementos o propiedades restantes después de capturar las que se desean, simplificando la manipulación de datos estructurados. En resumen, REST es una característica poderosa de JavaScript que facilita la escritura de código más conciso y flexible.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+function sumar (a,b,c, ...otros){
+  let suma = a + b + c; 
+  otros.forEach(n => suma += n);
+  return suma;
+}
+
+console.log(sumar(2,4,5,5));
+console.log(sumar(2,4,5,5,3));
+console.log(sumar(2,4,5,5,3,4,5));
+console.log(sumar(2,4,5,5,5,8,9));
+console.log(sumar(2,4,5,5));
+
+      </code>
+    </pre>  
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 2 
+function myFun(a,b, ...otros){
+  console.log("a", a);
+  console.log("b", b);
+  console.log("manyMoreArgs", otros);
+}
+
+myFun("one", "two", "Three", "For", "Five");
+
+      </code>
+    </pre>  
+  </article>
+
+  <article id="spread-operador">
+    <h2>Operador Spread</h2>
+    <p>El operador Spread en JavaScript, representado por tres puntos (...), se utiliza para descomponer arreglos o objetos en elementos individuales. En el contexto de arreglos, el operador Spread puede copiar elementos de un arreglo existente en uno nuevo o combinar múltiples arreglos en uno solo. En cuanto a los objetos, el operador Spread permite combinar múltiples objetos en uno solo, sobrescribiendo las propiedades en caso de colisión. Esta funcionalidad es especialmente útil para pasar argumentos a funciones, clonar objetos y crear nuevas estructuras de datos de manera rápida y sencilla. En general, el operador Spread es una herramienta versátil que simplifica la manipulación y transformación de datos</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Operador Spread
+const nu = [1,2,3,4,5,6];
+const num = [7,8,9,10,11,12];
+console.log(nu, num);
+
+const arre1 = [...nu, ...num];
+console.log(arre1);
+
+const arre2 = [0, ...nu, "numero",  ...num];
+console.log(arre2);
+
+      </code>
+    </pre>  
+  </article>
+
+  <article id="pilas">
+    <h2>Pilas</h2>
+    <p>Las pilas son una estructura de datos que sigue el principio de LIFO (Last In, First Out), lo que significa que el último elemento agregado es el primero en ser eliminado. Se pueden implementar utilizando arreglos o listas enlazadas. Las operaciones básicas en una pila son push() para agregar un elemento, pop() para eliminar el último elemento agregado y peek() para obtener el valor del elemento superior sin eliminarlo. Las pilas son útiles para resolver problemas que requieren seguimiento de estado, como la reversión de cadenas, la evaluación de expresiones matemáticas y la navegación hacia atrás en aplicaciones web.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+//  PILAS
+class Stack {
+  constructor(){
+    this.stack = [];
+  }
+
+  push(element){
+    this.stack.push(element);
+    return this.stack;
+  }
+
+  pop(){
+    return this.stack.pop();
+  }
+
+  peek(){
+    return this.stack[this.stack.length - 1];
+  }
+
+  size(){
+    return this.stack.length;
+  }
+
+  print(){
+    console.log(this.stack);
+  }
+}
+
+const stack = new Stack();
+console.log(stack.size());
+console.log(stack.push('Jhon Cena'));
+console.log(stack.push('The Rock'));
+console.log(stack.size());
+stack.print();
+console.log(stack.peek());
+console.log(stack.pop());
+
+      </code>
+    </pre>  
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Usando PILAS con NODOS
+// Creamos una clase para cada nodo dentro de la pila.
+
+class Node{
+  // cada nodo va a tener dos propiedad, valor o apuntador(Nodo que sigue)
+  constructor(value){
+    this.value = value;
+    this.siguiente = null;
+  }
+}
+
+// Creamos la clase pila
+class Stack{
+  // La pila tiene tres propiedades, el primer nodo, el ultimo nodo y el tamaño de la pila
+  constructor(){
+    this.primero = null;
+    this.ultimo = null;
+    this.size = 0;
+  } 
+  // retornar el ultimo valor ingresado a la pila
+  peek(){
+    return this.primero;
+  }
+  // creamos el método push el cual recibe un valor y lo ingresa a la pila
+  push(val){
+    let nNode = new Node(val);
+    if(!this.primero){
+      this.primero = nNode;
+      this.ultimo = nNode;
+    }else{
+      let temp = this.primero;
+      this.primero = nNode;
+      this.primero.siguiente = temp; 
+    }
+    return ++ this.size;
+  }
+
+  // pop() elimina el elemento de la parte superior de la pila
+  pop(){
+    if(!this.primero) return null
+    let tem = this.primero;
+    if(this.primero === this.ultimo){
+      this.ultimo = null;
+    }
+
+    this.primero = this.primero.siguiente;
+    this.size--
+    return tem.value
+
+  }
+
+}
+
+const stack = new Stack;
+stack.push("dato1");
+stack.push("dato2");
+stack.push("dato3");
+console.log(stack.primero);
+console.log(stack.peek());
+console.log(stack.size);
+console.log(stack.pop());
+console.log(stack.peek());
+console.log(stack);
+
+      </code>
+    </pre>  
+  </article>
+
+
+
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion18.js" type="module"></script>
+</body>
+
+</html>

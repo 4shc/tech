@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 33</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 33</h1>
+  <small class="fecha">25.04.2024 S33-M2</small>
+
+  <article id="react-hook">
+    <h2>React - Hook </h2>
+    <p>Los hooks en React son funciones especiales que te permiten "enganchar" o conectar el estado de React y el ciclo de vida de los componentes funcionales. Antes de los hooks, los componentes funcionales no podían tener estado ni acceder al ciclo de vida de los componentes de manera directa. Los hooks cambiaron esto al proporcionar un conjunto de funciones, como useState, useEffect, useContext, entre otros, que permiten a los componentes funcionales tener estado interno, realizar efectos secundarios, suscribirse a contextos y más. Los hooks hacen que los componentes funcionales sean más potentes y reutilizables, y son una parte fundamental de la programación en React moderno.</p>
+  </article>
+
+  <article id="react-hook-use-state">
+    <h2>React - Hook {useState}</h2>
+    <p><code>useState</code> Permite a los componentes funcionales tener un estado interno. Al llamar a useState, se devuelve una matriz con dos elementos: el primer elemento es el valor actual del estado y el segundo es una función que permite actualizar ese valor. Esta función se utiliza para modificar el estado y, cuando se actualiza, React vuelve a renderizar el componente con el nuevo valor del estado. El uso de useState simplifica la gestión del estado en los componentes funcionales, lo que los hace más simples y fáciles de entender en comparación con los componentes de clase. Además, useState es una de las características clave que permite a los desarrolladores escribir componentes más legibles y mantener la lógica de negocio separada de la interfaz de usuario en aplicaciones React.</p>
+    <p><b>Vamos a ver un ejemplo,</b> crea un nuevo componente en tu proyecto de <b>React</b> llamado <code>Contador</code> </p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Componentes/Contador.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import React, { useState} from 'react'
+
+const Contador = () => {
+
+  //Usando useState
+  const [number, setNumber] = useState(0)
+  // Función para sumar
+  const sumar = () => {
+    setNumber(number + 1)
+    console.log(number)
+  }
+  // Función para restar
+  const restar = () => {
+    setNumber(number - 1)
+    console.log(number)
+  }
+
+  return(
+    &lt;div className="container bg-dark rounded text-light text-center"&gt;
+      &lt;h1&gt;Contador&lt;/h1&gt;
+      &lt;h2&gt;{number}&lt;/h2&gt;
+      &lt;button className="btn btn-warning" onClick={restar}&gt;
+        &lt;i class="fa-solid fa-minus"&gt;&lt;/i&gt;
+      &lt;/button&gt;
+      &lt;button className="btn btn-warning" onClick={sumar}&gt;
+        &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;
+      &lt;/button&gt;
+
+    &lt;/div&gt;
+  )
+}
+
+export default Contador
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Lo primero que hacemos es importar <code>{ useState }</code> y ahora solo creamos la función. Dentro de la funciones definimos una una <code>const</code> y allí usamos a <code>useState.</code> Recordar que <code>useState</code> recibe dos parámetros, el primero la variable y el segundo una función. Adicional a ello, definimos dos funciones más, una para <code>sumar</code> y la otra para <code>restar.</code> Finalmente devolvemos la ejecución de esas funciones y estilizamos un poco el diseño con <code>Bootstrap</code> y agregamos algunos iconos.
+    </div>
+
+    <p>Recuerda llamar a tu componente en tu archivo principal <code>App.js</code></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">App.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import './App.css';
+import Contador from './Componentes/Contador';
+
+function App() {
+  return (
+    &lt;div className="App"&gt;
+        &lt;Contador /&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Comprobando el ejercicio...
+      <img src="contador.png" alt="">
+      <img src="contador-uno.png" alt="">
+      <img src="contador-dos.png" alt="">
+    </div>
+  </article>
+
+  <article id="react-hook-use-effect">
+    <h2>React - Hook {useEffect}</h2>
+    <p><code>useEffect</code> Permite realizar efectos secundarios en componentes funcionales. Se utiliza para ejecutar código adicional después de que el componente haya sido renderizado en el DOM. Puede ser utilizado para suscripciones a eventos, peticiones HTTP, actualizaciones de estado, entre otros. useEffect acepta una función como argumento, que se ejecutará después de cada renderizado del componente. También puede recibir un arreglo de dependencias como segundo argumento, lo que le permite controlar cuándo se debe ejecutar la función de efecto. Esto es especialmente útil para evitar ciclos de renderizado innecesarios o para limpiar efectos cuando el componente se desmonta. En resumen, useEffect es esencial para manejar lógica asíncrona y efectos secundarios en componentes funcionales de React.</p>
+    <p><b>Vamos a ver un ejemplo,</b> crea un nuevo componente en tu proyecto de <b>React</b> llamado <code>MiuseEffect</code> </p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Componentes/MiuseEffect.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+const MiuseEffect = () =>{
+  const [count, setCount] = useState(0)
+
+  useEffect(() =&gt;{
+    document.title = `Ciclaste en ${count} `
+  })
+
+  return(
+    &lt;div className="container bg-dark mt-4 pt-4 rounded text-light text-center"&gt;
+      &lt;h1&gt;Contador usando &lt;code className="badge bg-secondary "&gt;useEffect&lt;/code&gt;&lt;/h1&gt;
+      &lt;h2&gt; Clicaste en {count}&lt;/h2&gt;
+      &lt;button className="btn btn-warning" onClick={() =&gt; setCount(count + 1)}&gt;Clic aquí&lt;/button&gt;
+    &lt;/div&gt;
+  )
+
+}
+
+export default MiuseEffect
+
+      </code>
+    </pre>
+
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este <b>Hook</b> en el ejemplo hace exactamete lo mismo que el <code>{useState}</code> solo que añade una nueva funcionalidad, y es que al finalizar el <code>useState</code> y mostrar la variable <code>count</code> sumar 1 por cada clic, no solo mostrara el contenido en el <code>h2</code> donde se estableció el <code>count</code> inicialmente sino al rendererizar el DOM, este modificara la etiqueta html <code>title</code> y mostrara lo que se ha definido en el <code>useEffect.</code> 
+    </div>
+
+    <p>Recuerda llamar a tu componente en tu archivo principal <code>App.js</code></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">App.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import './App.css';
+import MiuseEffect from './Componentes/MiuseEffect';
+
+function App() {
+  return (
+    &lt;div className="App"&gt;
+        &lt;MiuseEffect /&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+      </code>
+    </pre>
+
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Comprobando el ejercicio...
+      <img src="effect.png" alt="">
+      <img src="effect-uno.png" alt="">
+      <p>Y si hacemos clic!</p>
+      <img src="effect-dos.png" alt="">
+      <img src="effect-tres.png" alt="">
+
+    </div>
+
+    <h3>Segundo ejemplo de <code>useEffect</code></h3>
+    <p><b>Veamos otro ejemplo,</b> crea un nuevo componente en tu proyecto de <b>React</b> llamado <code>Efecto</code> </p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import React, {useState, useEffect} from 'react'
+
+const Efecto = () => {
+  const [texto, setTexto] = useState('')
+
+  const mostrarTexto = (e) => {
+    setTexto(e.target.value)
+    console.log(texto)
+  }
+
+  useEffect(() =&gt;{
+    console.log('Montado')
+    return console.log('Desmontado')
+  }, [])
+  
+  useEffect(() =&gt;{
+    console.log('Texto modificado')
+  }, [texto])
+
+  return(
+    &lt;div className="container bg-dark mt-4 pt-4 rounded text-light text-center"&gt;
+      &lt;h1&gt;Ejemplo 2 -&lt;code className='badge bg-secondary'&gt;useEffect&lt;/code&gt;&lt;/h1&gt;
+      &lt;input className='m-3' type="text" onChange={mostrarTexto}/&gt;
+      &lt;p className='p-4'&gt;{texto}&lt;/p&gt;
+    &lt;/div&gt;
+  )
+}
+
+export default Efecto
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código muestra un componente de React llamado Efecto, que utiliza el hook useState para manejar un estado llamado texto. Cuando se modifica un campo de entrada en la interfaz, se actualiza el estado texto. Además, emplea el hook useEffect para imprimir mensajes en la consola cuando el componente se monta y cuando el estado texto se modifica. El primer useEffect se ejecuta solo una vez al montar el componente y muestra un mensaje de "Montado", mientras que el segundo useEffect se activa cada vez que texto cambia y muestra un mensaje de "Texto modificado".
+    </div>
+    <p>Recuerda llamar a tu componente en tu archivo principal <code>App.js</code></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">App.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import './App.css';
+import Efecto from './Componentes/Efecto';
+
+function App() {
+  return (
+    &lt;div className="App"&gt;
+        &lt;Efecto /&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Comprobando el ejercicio...
+      <img src="effect-1.png" alt="">
+      <p>El contenido del <code>input</code> se actualiza en el <code>&lt;p&gt;</code> <b style="font-size: 2em;">👇</b></p>
+      <img src="effect-2.png" alt="">
+   
+
+    </div>
+  
+  
+  </article>
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024 <br/><br/>
+    <a href="https://4shc.online/tech/">https://4shc.online/tech/</a>
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion33.js" type="module"></script>
+</body>
+
+</html>

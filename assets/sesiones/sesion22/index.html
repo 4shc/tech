@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 22</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1 id="sesion-22">SESIÓN 22</h1>
+  <small class="fecha">10.04.2024 S22-M2</small>
+
+  <article id="algoritmo-busqueda-lineal">
+    <h2>Algoritmos / Búsqueda binaria</h2>
+    <p>
+      La búsqueda binaria es un método rápido y eficiente para encontrar un valor específico en una lista ordenada. Divide repetidamente la lista por la mitad y compara el valor buscado con el elemento central. Si coincide, se devuelve la posición. Si es menor, se busca en la mitad inferior; si es mayor, en la superior. Este proceso se repite hasta encontrar el valor o agotar la lista. Con una complejidad de tiempo O(log n), es ideal para grandes conjuntos de datos.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Definición de la función de búsqueda binaria
+function BusquedaBi(datos, valor){
+  // Inicialización de los punteros izquierdo y derecho
+  let izq = 0;
+  let der = datos.length - 1;
+
+  // Ciclo de búsqueda binaria mientras izquierda sea menor o igual a derecha
+  while(izq <= der){
+    // Cálculo de la mitad del arreglo y redondeo al entero más cercano
+    let mitad = Math.floor((izq + der) / 2);
+    // Obtención del valor en la posición de la mitad
+    let dato = datos[mitad];
+
+    // Comprobación si el valor en la mitad es igual al valor buscado
+    if(dato == valor){
+      // Se encontró el valor, se devuelve la posición de la mitad
+      return mitad;
+    }
+    // Si el valor buscado es mayor al valor en la mitad
+    else if(valor > dato){
+      // Se ajusta el puntero izquierdo para buscar en la mitad derecha del arreglo
+      izq = mitad + 1;
+    }
+    // Si el valor buscado es menor al valor en la mitad
+    else{
+      // Se ajusta el puntero derecho para buscar en la mitad izquierda del arreglo
+      der = mitad - 1;
+    }
+  }
+
+  // Si no se encontró el valor en el arreglo, se devuelve -1
+  return -1;
+}
+
+const arreglo = [1,2,3,4,5,6,7,8,9,10,11,12,13,23,34,45,56];
+
+let num = 11;
+console.log(BusquedaBi(arreglo, num ));
+
+      </code>
+    </pre>  
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Ejemplo de búsqueda binaria 2
+function BusquedaBinaria(arr, izq, der, n){
+  if(izq > der) return -1;
+
+  const mitad = Math.floor((izq + der) / 2);
+
+  if(arr[mitad] == n) return mitad;
+
+  if(arr[mitad] < n){
+    return BusquedaBinaria(arr, mitad + 1, der, n)
+  }else{
+    return BusquedaBinaria(arr, izq, mitad -1, n);
+  }
+}
+
+let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,23,34,45,56];
+console.log(BusquedaBinaria(arr, 0, arr.length -1, 3));
+
+      </code>
+    </pre>  
+  </article>
+
+  <article id="algoritmo-quicksort">
+    <h2>Algoritmos / Quicksort</h2>
+    <p>Quicksort es un algoritmo de ordenamiento eficiente y rápido que utiliza la estrategia de dividir y conquistar. Funciona seleccionando un elemento pivote de la lista y particionando los elementos restantes en dos subconjuntos: aquellos menores que el pivote y aquellos mayores que el pivote. Luego, se aplica recursivamente Quicksort a cada subconjunto. Este proceso continúa hasta que todos los elementos estén ordenados. Quicksort tiene un tiempo de ejecución promedio de O(n log n) y es ampliamente utilizado en la práctica debido a su eficiencia y simplicidad.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Algoritmo quicksort
+function quicksort(num){
+  if(num.length <= 1){
+    return num;
+  }
+
+  let izq = [];
+  let der = [];
+  let aux = [];
+  let pivote = num.pop();
+  let n = num.length;
+
+  for(let i = 0; i < n; i++ ){
+    if(num[i] <= pivote){
+      izq.push(num[i]);
+    }else{
+      der.push(num[i]);
+    }
+  }
+  return aux.concat(quicksort(izq), pivote, quicksort(der));
+}
+
+let arr = [14, 23, 3, 4, 54, 6, 7, 8, 9, 1, 11, 12, 13, 22, 34, 32, 56,65,16,78,87,98];
+console.log(arr); 
+
+let res = quicksort(arr); 
+console.log(res);
+
+      </code>
+    </pre> 
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Ejemplo dos
+const QSort = (nums) => {
+  // caso base que parará la recursión ya que un arreglo que solo contiene
+  // un elemento, ya está ordenado
+  if (nums.length < 2) return nums;
+
+  const pivot = nums[0];
+  const pequeño = [];
+  const grande = [];
+
+    // ya que escogimos el primer elemento como pivote,
+    // empezamos a recorrer el arreglo desde el segundo elemento
+    for(let i = 1; i < nums.length; i++) {
+    if(nums[i] < pivot) pequeño.push(nums[i]);
+    else grande.push(nums[i]);
+  }
+
+  // puedes unir las sub-listas ordenadas usando spread de ES6 o .concat(
+  return [...QSort(pequeño), pivot, ...QSort(grande)];
+}
+
+let arr = [14, 23, 3, 4, 54, 6, 7, 8, 9, 1, 11, 12, 13, 22, 34, 32, 56,65,16,78,87,98];
+console.log(arr); 
+
+let res = QSort(arr); 
+console.log(res); 
+
+      </code>
+    </pre>  
+    <p><a href="https://www.youtube.com/watch?v=YzHDIvxOQcI">Aprende más sobre Quicksort</a></p>
+    <p><a href="https://www.escuelafrontend.com/algoritmos-de-ordenacion-javascript#quick-sort">o mira un ejemplo de código Quicksort aquí</a></p>
+
+  </article>
+
+  <article id="algoritmo-mergesort">
+    <h2>Algoritmos / MergeSort()</h2>
+    <p>MergeSort es un algoritmo de ordenación eficiente implementado en JavaScript que divide una lista en subconjuntos más pequeños hasta que cada uno contiene un solo elemento. Luego, combina recursivamente estos subconjuntos en orden hasta que se obtiene una lista completamente ordenada. Utiliza la técnica de "divide y conquista", lo que significa que divide el problema en partes más pequeñas y resuelve cada parte por separado. Debido a su complejidad de tiempo O(n log n) en el peor caso, MergeSort es ideal para ordenar grandes conjuntos de datos de manera eficiente.</p>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Implementación Merge()
+function mergesort(izq, der){
+  let i = 0;
+  let d = 0;
+  let res = [];
+
+  while (i < izq.length || d < der.length){
+    if(i === izq.length){
+      res.push(der[d]);
+      ++d;
+    }else if(d === der.length || izq[i] <= der[d]){
+      res.push(izq[i]);
+      ++i;
+    }else{
+      res.push(der[d]);
+      ++d;
+    }
+  }
+  return res;
+}
+
+let num = [2,11,23,45,67];
+let num2 = [3,12,24,54,87, 93];
+
+let rest = mergesort(num, num2);
+console.log(rest);
+console.log(rest.length);
+
+      </code>
+    </pre>  
+    
+    <p><a href="https://www.youtube.com/watch?v=kOgzXagXpTg">Aprende más sobre MergeSort()</a></p>
+    <p><a href="https://www.escuelafrontend.com/algoritmos-de-ordenacion-javascript#merge-sort">o mira un ejemplo de código MergeSort() aquí</a></p>
+
+  </article>
+
+
+
+
+
+ 
+
+
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion22.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 31</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 31</h1>
+  <small class="fecha">23.04.2024 S31-M2</small>
+
+  <article id="react-dos">
+    <h2>React - Parte 2</h2>
+    <p><b>Ejercicio 3 -</b></p>
+    <p>Creamos un nuevo componente llamado <b><code>Persona.js</code></b> dicho componente contiene:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/Componentes/Personas.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">       
+
+import React from "react";
+// Usando props de forma muy básica y simple
+function Persona(props){
+  return(
+    &lt;div className="persona ver"&gt; 
+      &lt;h2&gt;Nombres : {props.nombre}&lt;/h2&gt;
+      &lt;p&gt;Edad     : {props.edad}&lt;/p&gt;
+      &lt;p&gt;Correo   : {props.correo}&lt;/p&gt;
+
+    &lt;/div&gt;
+  )
+}
+
+export default Persona;
+        
+      </code>
+    </pre>
+    
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      <b>Recuerda que como lo hemos trabado anteriormente siempre llamamos el componente en el archivo principal <b><code>src/App.js</code></b></b>
+    </div>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/App.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">       
+
+import './App.css';
+import LoginButton from './Componentes/LoginButton';
+import LogoutButton from './Componentes/LogoutButton';
+import Profile from './Componentes/Profile';
+import Persona from './Componentes/Persona';
+
+function App() {
+  return (
+    &lt;div className="App"&gt;
+        &lt;nav className='nav-login'&gt;
+          &lt;LoginButton/&gt;
+          &lt;LogoutButton/&gt;
+          &lt;Profile /&gt;
+        &lt;/nav&gt;
+
+        &lt;Persona 
+          nombre =" Juan Lizcano" 
+          edad="44" 
+          correo = "juang@gmail.com" 
+        /&gt;
+        &lt;Persona 
+          nombre =" Maria Cano" 
+          edad="33" 
+          correo = "miiria@gmail.com" 
+        /&gt;
+        &lt;Persona 
+          nombre =" Ana Pulido" 
+          edad="45" 
+          correo = "" 
+        /&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      <b>Anteriormente ya habíamos aplicado unos estilos en el archivo <b><code>src/App.css</code></b> es por eso que en pantalla veras todos los componentes en acción, incluyendo los botones de <b>Login</b> y <b>Logout</b></b>
+    </div>
+    <img src="props.png" alt="">
+
+    
+
+  </article>
+
+  <article id="react-vite">
+    <h2>React con Vite</h2>
+    <p>En esta parte vamos a trabajar <b>React</b> con <b>Vite</b>. Primero deberás crear un nuevo proyecto con <b>Vite.</b> Luego sigue los pasaos para instalar de forma correcta React. Elije tu directorio y en la terminal ejecuta:</p>
+    <p>Si deseas puedes apoyarte de la <a href="https://vitejs.dev/guide/">documentación de vite</a></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Estructura de carpetas</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+→ <b style="color: #d335fac0">react_vite</b> // New
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">react_vite</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+npm create vite@latest
+      </code>
+    </pre>
+    <p>Una ves establecido tus preferencia en cuanto a lenguaje y estructura de trabajo se crearía un nuevo proyecto Vite, en este caso llamado por defecto <b><code>vite-proyect</code></b></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Estructura de carpetas</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+→ react_vite</b>
+  → <b style="color: #d335fac0">vite-proyect</b> // New
+      </code>
+    </pre>
+    <p>Ahora situate en <b><code>vite-proyect</code></b> de forma manual o directamente en la terminal ejecutando:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Terminal ...react_vite</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+cd vite-project
+      </code>
+    </pre>
+    <p>Y finalmente ejecuta:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Terminal ...react_vite/vite-proyect</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+npm install
+      </code>
+    </pre>
+    <h3>Inicializando Vite + React</h3>
+    <p>Para inicializar tu proyecto ejecuta en la terminal el siguiente código:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Terminal ...react_vite/vite-proyect</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+<b class="resalt bor4">npm run dev</b>
+      </code>
+    </pre>
+    <p>😎 Perfecto ya puedes empezar a mover coitas y jugar un rato con React y Vite! 😁</p>
+  
+  </article>
+
+  <article id="react-ejer-card-one">
+    <h2>React - Ejercicio Cards - Parte 1</h2>
+    <p>En esta parta realizaremos un ejercicio donde usaremos una serie <code>Cards</code> las cuales redireccionaran a su respectivo contenido en una ruta independiente. Pare ello los datos de cada card van a estar contenidos en un único <code>json</code> el cual recorreremos un cun <code>.map</code> en nuestro archivo principal. Debes tener en cuenta que vamos a crear distintos <code>css</code> para estilizar las card y demás partes de nuestro proyecto, igualmente se modificaran algunas lineas de el <code>css</code> existente tanto del <code>index.css</code> como del <code>App.css</code></p>
+    <p>Para esta primera parte del ejercicio vamos a crear los siguientes directorios, archivos, y ademas se modificaran algunos existentes de la siguiente forma, todo esto contenido en el directorio <b><code>src</code></b></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Estructura de carpetas</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+↓ src
+    ↓ <b style="color: #d335fac0">Componentes</b>// New
+        <b style="color: #cdb632c0">Card.css</b>// New
+        <b style="color: #cdb632c0">Card.jsx</b>// New
+    ↓ <b style="color: #d335fac0">datos</b>// New
+        <b style="color: #cdb632c0">lenguajes.js</b>// New
+    ↓ <b style="color: #d335fac0">vistas</b>// New
+        <b style="color: #cdb632c0">VistasLenguajes.css</b>// New
+        <b style="color: #cdb632c0">VistasLenguajes.jsx</b>// New
+      <b style="color: #5e5e5e">App.css</b>// Modified
+      <b style="color: #5e5e5e">App.jsx</b>// Modified
+      <b style="color: #5e5e5e">index.css</b>// Modified
+      main.jsx
+
+      </code>
+    </pre>
+
+    <h3>Definimos nuestra Card</h4>
+    <p>Es simple, el único componente como tal que usaremos de momento será <code>Card.jsx</code> y éste queda configurado de la siguiente manera:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/Componentes/Card.jsx</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import "../Componentes/Card.css"
+
+function Card (props){
+  return( 
+    &lt;div className="card"&gt;
+      &lt;h2&gt;{props.titulo}&lt;/h2&gt;
+      &lt;p&gt;{props.descripcion}&lt;/p&gt;
+    &lt;/div&gt;
+  )
+}
+
+export default Card;
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código define un componente llamado "Card" en React. Toma dos propiedades, "titulo" y "descripcion", y las utiliza para renderizar un elemento div con una clase "card", que contiene un título y una descripción. Este componente puede ser reutilizado en cualquier parte de la aplicación para mostrar contenido estructurado de manera consistente.
+    </div>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/Componentes/Card.css</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-css">
+
+.card{
+  border: dashed 2px greenyellow;
+  background-color: #d6c8c8;
+  padding: 1em;
+  border-radius: 4px;
+  width: 30%;
+  color: #242424;
+}
+
+      </code>
+    </pre>
+    
+    <h3>Configurando nuestro Json</h3>
+    <p>Es momento de definir que datos son los que van a contener nuestras <code>Cards</code>, estos estarán dentro de nuestro archivo <code>src/datos/lenguajes.js</code>, quedando configurado de la siguiente forma:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/datos/lenguajes.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const lenguajes = [
+  {
+    ntitulo: "React",
+    ndescripcion: "React es una biblioteca de JavaScript",
+    imagen: "https://es.wikipedia.org/wiki/Archivo:React.svg",
+  },
+  {
+    ntitulo: "SQL",
+    ndescripcion: "Es un lenguaje de base de datos",
+    imagen: "https://es.wikipedia.org/wiki/Archivo:Sql_database_shortcut_icon.png",
+  },
+  {
+    ntitulo: "PHP",
+    ndescripcion: "Lenguaje de programación para construir backend",
+    imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/200px-PHP-logo.svg.png",
+  },
+  {
+    ntitulo: "C#",
+    ndescripcion: "lenguaje de programación para trabajar objetos",
+    imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/320px-C_Sharp_Logo_2023.svg.png",
+  },
+  {
+    ntitulo: "Angular",
+    ndescripcion: "Es un framework para frontend",
+    imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png",
+  },
+  {
+    ntitulo: "JAVA",
+    ndescripcion: "Lenguaje de programación para hacer apps web y escritorio",
+    imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Java_Black_icon.svg/320px-Java_Black_icon.svg.png",
+  }
+]
+
+export default lenguajes;
+      </code>
+    </pre>
+
+    <h3>Implementando con App.jsx </h3>
+    <p>Es momento de importar nuestra <code>Card</code>, recorrer nuestros datos contenidos en <code>lenguajes.js</code> y confirmar que nuestras Cards están siendo visibles y todo funciona de momento, correctamente.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/App.jsx</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import './App.css'
+import Card from './Componentes/Card'
+// Importamos nuestro Json con nuestros datos
+import lenguajes from './datos/lenguajes'
+
+function App() {
+
+const ListasLenguajes = lenguajes.map((l, index) =&gt;{
+  return &lt;Card key = {index} titulo = {l.ntitulo} descripcion = {l.ndescripcion}/&gt;
+})
+
+
+  return (
+    &lt;div className="app"&gt;
+      &lt;h1&gt;React - Ejercicio Cards&lt;/h1&gt;
+      &lt;div className="container"&gt;
+        {ListasLenguajes}
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  )
+}
+
+export default App
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código representa una aplicación de React que muestra tarjetas (cards) con información sobre diferentes lenguajes de programación. Utiliza un archivo CSS para estilos y un componente llamado "Card" para renderizar cada tarjeta. Importa un archivo JSON llamado "lenguajes" que contiene datos sobre los lenguajes de programación. Luego, utiliza el método "map" para recorrer este archivo JSON y crear una lista de tarjetas, pasando los datos relevantes de cada lenguaje como props al componente "Card". Finalmente, la aplicación renderiza el título principal y la lista de tarjetas dentro de un contenedor en el DOM.
+    </div>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/App.css</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-css">
+
+/* Estilos principales para App.jsx */
+.app h1{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">scr/index.css</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-css">
+
+/* Estilos adicionales  scr/index.css */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+      </code>
+    </pre>
+    <h3>Comprobación de la vista del DOM desde el navegador</h3>
+    <p><img src="ejer-1.png" alt=""></p>
+    <p>De esta manera damos por finalizada esta sesión, en la siguiente trabajaremos con la parte de mostrar las imágenes del <code>Json</code>, así como también dar la funcionalidad a las <code>cards</code> para que redireccionen a otras páginas o directorios.</p>
+ 
+    <p></p>
+    <a href="https://github.com/4shc/react_vite">
+      <img src="../../img/github-icon-min-min.png" alt="github.com/4shc/backend-mongo">
+    </a>
+    <span>Mira el repositorio en Github</span>
+
+  </article>
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024 <br/><br/>
+    <a href="https://4shc.online/tech/">https://4shc.online/tech/</a>
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion31.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 17</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 15</h1>
+  <small class="fecha">27.03.2024 S15-M1</small>
+
+  <article id="herencia-ejer">
+    <h2>Herencia - Ejercicio practico </h2>
+    <p>Ejercicios prácticos</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+class Bus {
+  constructor(nPasajero, pasajes) {
+    this.nPasajero = nPasajero;
+    this.pasajes = pasajes;
+  }
+
+  static precioPasaje = 20000; 
+
+  mensaje() {
+    let totalP = this.pasajes * Bus.precioPasaje; 
+    console.log(`Bienvenido ${this.nPasajero}, has comprado ${this.pasajes} pasajes y el total a pagar es de ${totalP} `);
+  }
+}
+
+class Bus1 extends Bus {
+  constructor(nPasajero, pasajes, destino) {
+    super(nPasajero, pasajes);
+    this.destino = destino;
+  }
+
+  mensaje() {
+    super.mensaje();
+    console.log(`Nuestra ruta es ${this.destino}`);
+    if (this.pasajes >= 4) {
+      let descuento = this.pasajes * Bus.precioPasaje * 0.15;
+      let totalP = this.pasajes * Bus.precioPasaje - descuento;
+      console.log(`Por tu compra tienes un descuento del 15%, es decir solo pagas ${totalP}`);
+    }
+  }
+}
+
+const bus1 = new Bus1("Juan", 2, "Ibague");
+console.log(bus1);
+bus1.mensaje();
+      </code>
+    </pre>
+
+    <h3>Ejercicio</h3>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Creamos una clase principal
+class Empleado{
+  constructor(nombre, edad, genero){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.genero = genero;
+  }
+  // Con el método 'static' podemos usar esta función sin necesidad de instanciar la clase.
+  static cuentaCobro(){
+    console.log("Pasar la cuenta de cobro al llegar al día '3' de casa mes")
+  }
+}
+
+// Llamado a la función sin instanciar la clase.
+Empleado.cuentaCobro();
+
+// Usamos herencia 
+class Profesor extends Empleado{
+
+  constructor(nombre, edad, genero, asignatura){
+    super(nombre, edad, genero);
+    this.asignatura = asignatura;
+    this.horas = null;
+  }
+  // para poder acceder a 'horas' que no esta definido como atributo usamos 'get'. Me permite ver el valor.
+  get getHoras(){
+    return this.horas;
+  }
+  // Para poder tomar el valor usamos 'set'
+  set setHoras(horas){
+    this.horas = horas;
+  }
+}
+
+
+const empleado = new Empleado("Luis", 23, "Masculino");
+console.log(empleado);
+
+
+const docente = new Profesor("Raul", 33, "Masculino","Español");
+console.log(docente);
+console.log(docente.getHoras);
+
+// Para usar 'set' y poder darle un valor, hacemos lo siguiente:
+docente.setHoras = 45;
+console.log(docente.getHoras); 
+      </code>
+
+    </pre>
+
+    <h3>Herencia ejercicio practico 2</h3>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+class Animal {
+  constructor(nombre, tipo) {
+    this.nombre = nombre;
+    this.tipo = tipo;
+  }
+
+  animalMessa() {
+    console.log(`Hola, soy un ${this.tipo} y me llamo ${this.nombre} y sí, también hablo 😎`);
+  }
+}
+
+class Animal1 extends Animal {
+  constructor(nombre, tipo, patas = null) {
+    super(nombre, tipo);
+    this.patas = patas;
+  }
+
+  getPatas() {
+    return this.patas;
+  }
+
+  setPatas(patas) {
+    this.patas = patas;
+  }
+}
+
+const ballena = new Animal1("Moby Dick", "Mamífero");
+console.log(ballena);
+ballena.setPatas(2); // Utiliza el método setPatas para establecer el número de patas
+console.log(ballena.getPatas()); // Utiliza el método getPatas para obtener el número de patas
+
+console.log(ballena);
+
+      </code>
+    </pre>
+  </article>
+
+  <article id="poliformismo">
+    <h2>Poliformismo</h2>
+    <p>Permite que objetos de diferentes clases respondan al mismo mensaje de maneras distintas. Esto significa que un método puede tener diferentes implementaciones según la clase del objeto que lo esté utilizando, lo que brinda flexibilidad en el diseño del código y promueve la reutilización de código.</p>
+
+    <h3>Sobreescritura de métodos</h3>
+    <p>Permite que una clase hija reemplace la implementación de un método heredado de su clase padre con su propia implementación. Esto significa que la clase hija puede personalizar el comportamiento de un método heredado según sus necesidades específicas.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Sobreescritura de métodos
+
+class Personas{
+  constructor(nombre, edad){
+    this.nombre = nombre; 
+    this.edad = edad; 
+  }
+  saludar(){
+    console.log(`Buenas noches, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+  }
+}
+
+class Desarrollador extends Personas{
+  constructor(nombre, edad, tipo){
+    super(nombre, edad);
+    this.tipo = tipo;
+  }
+  // Sobreescribimosel metodo 'saludar()'
+  saludar(){
+    console.log(`Soy un desarrollador ${this.tipo}.`)
+  }
+}
+
+let persona = new Personas("Carlos", 22);
+console.log(persona);
+persona.saludar();
+
+let desarrollador = new Desarrollador("Bryan", 33, "FullStack");
+console.log(desarrollador);
+desarrollador.saludar(); 
+      </code>  
+    </pre>
+  
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Polimorfismo
+class Personas{
+  constructor(nombre, edad){
+    this.nombre = nombre; 
+    this.edad = edad; 
+  }
+  saludar(){
+    console.log(`Buenas noches, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+  }
+}
+
+class Desarrollador extends Personas{
+  constructor(nombre, edad, tipo){
+    super(nombre, edad);
+    this.tipo = tipo;
+  }
+  // Usando Polimorfismo quedaría de la siguiente forma:
+  saludar(){
+    super.saludar();
+    console.log(`Soy un desarrollador ${this.tipo}.`);
+
+  }
+
+}
+
+let persona = new Personas("Carlos", 22);
+console.log(persona);
+persona.saludar();
+
+let desarrollador = new Desarrollador("Bryan", 33, "FullStack");
+console.log(desarrollador);
+desarrollador.saludar(); 
+
+      </code>  
+    </pre>
+  
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejercicio práctico        
+class Bus {
+  constructor(nPasajero, pasajes) {
+    this.nPasajero = nPasajero;
+    this.pasajes = pasajes;
+  }
+
+  static precioPasaje = 20000; 
+
+  mensaje() {
+    let totalP = this.pasajes * Bus.precioPasaje; 
+    console.log(`Bienvenido ${this.nPasajero}, has comprado ${this.pasajes} pasajes y el total a pagar es de ${totalP} `);
+  }
+}
+
+class Bus1 extends Bus {
+  constructor(nPasajero, pasajes, destino) {
+    super(nPasajero, pasajes);
+    this.destino = destino;
+  }
+
+  mensaje() {
+    super.mensaje();
+    console.log(`Nuestra ruta es ${this.destino}`);
+    if (this.pasajes >= 4) {
+      let descuento = this.pasajes * Bus.precioPasaje * 0.15;
+      let totalP = this.pasajes * Bus.precioPasaje - descuento;
+      console.log(`Por tu compra tienes un descuento del 15%, es decir solo pagas ${totalP}`);
+    }
+  }
+}
+
+const bus1 = new Bus1("Juan", 2, "Ibague");
+console.log(bus1);
+bus1.mensaje();
+
+      </code>  
+    </pre>
+  
+  
+  
+  </article>
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion15.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 20</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 20</h1>
+  <small class="fecha">08.04.2024 S20-M2</small>
+
+  <!--#region Lista enlazada  --> 
+  <article id="lista-enlazada-ejer">
+    <h2>Lista enlazada ejercicios</h2>
+    <p>Más ejemplos de listas enlazadas</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Lista enlazada Ejemplo new 1
+
+// Creamos la clase nodo para cada nodo de la lista
+class Node {
+  // Cada nodo tiene 2 propiedades, valor y el puntero que indica el nodo que sigue
+  constructor(val){
+    this.val = val;
+    this.next = null;
+  }
+}
+
+// Creamos una clase para la lista enlazada
+class listaEnlazada{
+  // Lleva 3 propiedades el encabezado, la cola y el tamaño
+  constructor(){
+    this.head = null;
+    this.tail = null;
+    this.size = 0;
+  }
+
+  // Primer método, MÉTODO PUSH toma un valor como parámetro y lo asigna al final de la lista 
+  Push(val){
+    const newNode = new Node(val)
+      if(!this.head){
+        this.head = newNode;
+        this.tail = this.head;
+      }else{
+        this.tail.next = newNode;
+        this.tail = newNode;
+      }
+      this.size++;
+      return this;
+  }
+}
+
+const lista = new listaEnlazada();
+lista.Push('a');
+lista.Push('hola');
+lista.Push('b');
+lista.Push('mundo');
+lista.Push('c');
+console.log(lista);
+
+
+      </code>
+    </pre>  
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Lista enlazada Ejemplo new 2
+class Node {
+  // Cada nodo tiene 2 propiedades, valor y el puntero que indica el nodo que sigue
+  constructor(val){
+    this.val = val;
+    this.next = null;
+  }
+}
+class listaEnlazada{
+  // Lleva 3 propiedades el encabezado, la cola y el tamaño
+  constructor(){
+    this.head = null;
+    this.tail = null;
+    this.size = 0;
+  }
+
+  Push(val){
+    const newNode = new Node(val)
+      if(!this.head){
+        this.head = newNode;
+        this.tail = this.head;
+      }else{
+        this.tail.next = newNode;
+        this.tail = newNode;
+      }
+      this.size++
+      return this
+  }
+
+  // Sirve para saber la Cantidad de datos que tiene
+  numDatos = () => {
+    let contador = 0;
+    let dato = this.head;
+    if(!dato) return 0;
+    else contador = 1;
+    while(dato.next){
+      dato = dato.next;
+      contador++;
+    }
+    return contador;
+  }
+  // Este método sirve para buscar un dato en especifico
+  buscarDato = (valor) => {
+    let dato = this.head;
+    while(dato){
+      if(dato.val === valor){
+        return dato;
+      }
+      dato = dato.next;
+    }
+    return null;
+  }  
+
+  // función para eliminar por la cola
+  pop(){
+    if(!this.head) return undefined
+      let actual = this.head;
+      let newTail = actual;
+      while(actual.next){
+        newTail = actual;
+        actual = actual.next
+      }
+
+      this.tail = newTail;
+      this.tail.next = null;
+      this.size--
+      if(this.size === 0){
+        this.head = null;
+        this.tail = null;
+      }
+      return actual
+  }
+}
+
+
+const lista = new listaEnlazada();
+lista.Push('a');
+lista.Push('hola');
+lista.Push('b');
+lista.Push('mundo');
+lista.Push('c');
+lista.Push(23);
+console.log(lista);
+// Comprobando el número de datos
+console.log(lista.numDatos());
+
+//Comprobando el buscador
+console.log(lista.buscarDato('c'));
+
+// Comprobando la eliminación por la cola
+console.log(lista.pop());
+console.log(lista);
+
+      </code>
+    </pre>  
+
+    <p><a href="https://wiki.yowu.dev/es/Knowledge-base/Algorithm/javascript-009-double-linked-list">Afianza conocimientos sobre 'Listas enlazadas'</a></p>
+  </article>
+
+  <article id="arbol-binario">
+    <h2>Árbol binario</h2>
+    <p>Los árboles binarios en JavaScript son estructuras de datos compuestas por nodos que pueden tener hasta dos hijos: un hijo izquierdo y un hijo derecho. Cada nodo contiene un valor y referencias a sus hijos. Estos árboles son útiles para representar relaciones jerárquicas, como estructuras de archivos o relaciones familiares. Las operaciones comunes en árboles binarios incluyen la inserción, eliminación y búsqueda de nodos, así como recorridos para visitar los nodos en diferentes órdenes.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Árbol binario
+// Creamos la clase principal 'Nodo', con tres propiedades.
+class Node {
+  // 3 propiedades 
+  constructor(valor){
+    this.valor = valor;
+    this.izq = null;
+    this.der = null;
+  }
+}
+
+// Creamos la clase 'Árbol' con una sola propiedad
+class Arbol{
+  constructor(){
+    this.raiz = null;
+  }
+
+  // Creamos un método a función de inserción a nuestra clase 'Arbol', 
+  Agregar(valor){
+    const newNode = new Node(valor);
+    if(this.raiz === null){
+      this.raiz = newNode;
+    }else
+      this.AgregarNode(this.raiz, newNode);
+  }
+
+  // Creamos la función agregar a los nodos Izq o Der.
+  AgregarNode(nodo, newNode){
+    if(newNode.valor < nodo.valor){
+      if(nodo.izq === null){
+        nodo.izq = newNode;
+      }else{
+        this.AgregarNode(nodo.izq, newNode);
+      }
+    }else{
+      if(nodo.der === null){
+        nodo.der = newNode;
+      }else{
+        this.AgregarNode(nodo.der, newNode);
+      }
+    }
+  }
+
+  // Función buscar
+  Buscar(valor){
+    return this.BuscarNodo(this.raiz, valor)
+  }
+  // Función Buscar nodo
+  BuscarNodo(nodo, valor){
+    if(nodo === null || nodo.valor === valor ){
+      return nodo;
+    }else if(valor < nodo.valor){
+      return this.BuscarNodo(nodo.izq, valor)
+    }else{
+      return this.BuscarNodo(nodo.der, valor)
+    }
+  }
+}
+
+// comprobando la función Agregar()
+const newArbol = new Arbol();
+newArbol.Agregar("D");
+console.log(newArbol);
+newArbol.Agregar("B");
+console.log(newArbol);
+newArbol.Agregar("C");
+console.log(newArbol);
+newArbol.Agregar("a");
+console.log(newArbol);
+newArbol.Agregar("A");
+console.log(newArbol);
+newArbol.Agregar("c");
+console.log(newArbol);
+newArbol.Agregar("b");
+console.log(newArbol);
+
+// Comprobando la función BuscarNode()
+console.log(newArbol.Buscar("A"));
+console.log(newArbol.Buscar("Z"));
+
+      </code>
+    </pre>  
+
+
+    <p><a href="https://informatecdigital.com/algoritmos/arboles-binarios-en-javascript-una-guia-completa/">Afianza conocimientos sobre 'Árbol binarios'</a></p>
+  </article>
+
+
+
+
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion20.js" type="module"></script>
+</body>
+
+</html>

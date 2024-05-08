@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 28</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 28</h1>
+  <small class="fecha">18.04.2024 S28-M2</small>
+
+
+  <article id="crud-express-mysql-uno">
+    <h2>CRUD / Express y MySql - Parte 1</h2>
+    <p>En esta cuarta parte vamos a realizar otro CRUD(Create, Read, Update, Delete) esta vez con una base de datos relacional. Antes habíamos creado nuestro proyecto con una base de datos no relacional como lo era MongoDb, ahora trabajaremos con un gestor MySql en este caso usaremos <b>Xampp</b>.</p>
+    <p>Primero creamos nuestro directorio <b>backend-mysql</b> e iniciamos un nuevo proyecto node.js y descargamos las siguientes dependencias:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Instalación de dependencias</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+npm init -y
+npm i express
+npm i cors sequelize mysql2 
+npm i nodemon -D
+
+      </code>
+    </pre>
+
+    <p>Mira la documentación de <b>sequelize </b> <a href="https://sequelize.org/docs/v6/core-concepts/model-basics/">aquí</a></p>
+    <p>En este proyecto no trabajamos con REQUIRE trabajaremos con módulos, para ello modifica nuestra package.json, este debe quedar de la siguiente manera:</p>
+    
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">package.json.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+{
+  "name": "backend-mysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module", // le especificamos que vamos a trabajar con Módulos y no con require
+  "scripts": {
+    "start": "nodemon src/index.js" // Modificamos para que inicie nuestra app con nodemon desde nuestra ruta src/index.js
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.6",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
+
+      </code>
+    </pre> 
+    <h3>Creación de base de datos relacional</h3>
+    <p>En <b>Xampp</b> crea una nueva base de tatos llamada <b>citasDB</b></p>
+    <img src="create-bd.png" alt="">
+    <p>Crea una nueva tabla llamada <b>citas</b></p>
+    <img src="create-table-citas.png" alt="">
+    <p>Verifica que los 7 campos queden con la siguiente configuración:</p>
+    <img src="table-campos.png" alt="">
+    <p>Crea el primer registro</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">MySql</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-sql">
+
+INSERT INTO `citas`(
+  `nombre_medico`, 
+  `especialidad`, 
+  `fecha`, 
+  `duracion`) 
+  VALUES (
+    'Julio Amaya',
+    'Medico General',
+    '18-04-2024',
+    '30 min')      
+
+      </code>
+    </pre> 
+  
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      <b><code>IMPORTANTE!</code></b> <b>'Sequelize'</b> en su documentación nos recomienda que creemos dos campos adicionales en nuestra base de datos: 
+      <b><code>'createdAt'</code></b> y <b><code>'updatedAt'</code></b> de tipo 'date'. Para que no se generen errores en <b>Xampp</b> debes omitir esos dos campos y adicional omitir el campo de <b>ID</b>, por esta razón de los 7 campos de la tabla solo debes ingresar datos a 4 campos. 
+    </div>
+
+    <h3>Estructura de carpetas</h3>
+    <p>Ahora creamos los directorios y archivos necesarios para conectarnos y trabajar con nuestra base de datos  </p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">estructura de carpetas</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+↓ <b style="color: #d335fac0">config</b>// New
+    <b style="color: #cdb632c0">dg.js</b>// New
+↓ <b style="color: #d335fac0">controllers</b>// New
+    <b style="color: #cdb632c0">CitasController.js</b>// New
+↓ <b style="color: #d335fac0">models</b>// New
+    <b style="color: #cdb632c0">Citas.js</b>// New
+→ node_modules
+↓ <b style="color: #d335fac0">routes</b>// New
+    <b style="color: #cdb632c0">RouterCitas.js</b>// New
+↓ <b style="color: #d335fac0">src</b>// New
+    <b style="color: #cdb632c0">index.js</b>// New
+  package-lock.json
+  package.json
+
+      </code>
+    </pre> 
+
+    <h3>Iniciando CRUD</h3>
+    <p>En esta parte se inicia con el Crud, definiendo algunas rutas, conexión a la base de datos y creación de nuestro primer método para agregar citas a nuestra base de datos relacional, ten presente que el modelo no contine dos campos que en la base dedatos definimos inicialmente, esto por que son campos que funcionan con <b>Sequelize</b> y el automáticamente se encarga de su gestión, por lo que nosotros no debemos no debemos tocarlos.</p>
+    <p>Nuestra configuración de momento queda definida de la siguiente manera: </p>
+    
+    <p><h4>config/db.js</h4></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">config/db.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// config/db.js
+import { Sequelize } from "sequelize";
+
+const BD = new Sequelize('citasbd', 'root', '',{
+  host:'localhost',
+  dialect: 'mysql'
+})
+
+export default BD;
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Configura la conexión a la base de datosMySQL utilizando Sequelize, una librería de Node.js para manejar bases de datos relacionales. Especifica el nombre de la base de datos 'citasbd', usuario 'root', sin contraseña(vacío). Además, se define el host como 'localhost' y se especifica el dialecto 'mysql'. La conexión establecida se exporta como un objeto BD que puede ser utilizado en otras partes de la aplicación para interactuar con la base de datos.
+    </div>
+
+    <p><h4>model/Citas.js</h4></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">model/Citas.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// model/Citas.js
+// Importamos la conexión a la BD
+import BD from "../config/db.js";
+import { DataTypes } from "sequelize";
+
+const Citas = BD.define('citas', {
+
+  nombre_medico : 
+  {
+    type: DataTypes.STRING, 
+    allowNull:false
+  },
+
+  especialidad : 
+  {
+    type: DataTypes.STRING, 
+    allowNull:false
+  },
+  
+  fecha: 
+  {
+    type: DataTypes.STRING, 
+    allowNull:false
+  },
+  
+  duracion : 
+  {
+    type: DataTypes.STRING, 
+    allowNull:false
+  },
+
+});
+
+export default Citas;
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código define un modelo 'Citas' utilizando Sequelize, un ORM para bases de datos relacionales en Node.js. El modelo 'Citas' representa una tabla en la base de datos con campos como 'nombre_medico', 'especialidad', 'fecha' y 'duracion', todos de tipo STRING y que no permiten valores nulos. La conexión a la base de datos se importa de un archivo de configuración y se define el nombre de la tabla como 'citas'. Este modelo se exporta para ser utilizado en otras partes del proyecto.
+    </div>
+
+    <p><h4>controller/CitasController.js</h4></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">controller/CitasController.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// controller/CitasController.js
+// Importamos el modelo 
+import Citas from '../model/Citas.js';
+
+// Creamos los métodos CRUD
+
+// Creamos una función para agregar citas
+export const agregarCitas = async (req, res) => {
+  try {
+    await Citas.create(req.body)
+    res.json({msg: "Cita creada con éxito 😎"});
+    
+  } catch (error) {
+    res.json ({msg: error.message});
+  }
+}
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+    Este código importa el modelo 'Citas' definido anteriormente y define una función 'agregarCitas' para el CRUD. Dentro de esta función, se intenta crear una nueva entrada en la base de datos utilizando el método 'create' del modelo 'Citas' con los datos proporcionados en 'req.body'. Si la operación se realiza con éxito, se envía una respuesta JSON indicando que la cita se ha creado correctamente. En caso de error, se captura la excepción y se envía un mensaje JSON con el error correspondiente.
+    </div> 
+
+    <p><h4>routes/RoutesCitas.js</h4></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">routes/RoutesCitas.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// routes/RoutesCitas.js
+// Importamos express
+import express from 'express';
+
+// Importamos nuestro controlador
+import {agregarCitas} from '../controller/CitasController.js';
+
+const router = express.Router();
+router.post('/', agregarCitas);
+
+export default router;
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código importa Express y el controlador 'agregarCitas' del archivo 'CitasController.js'. Luego, define un nuevo enrutador de Express con express.Router(). Posteriormente, se configura una ruta POST en el enrutador que, cuando se accede, llama a la función 'agregarCitas' del controlador. Finalmente, exporta este enrutador para que pueda ser utilizado en otras partes de la aplicación.
+    </div> 
+
+    <p><h4>src/index.js</h4></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/index.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// src/index.js
+import express from "express";
+import cors from "cors";
+// Importamos la configuración de la BD
+import BD from '../config/db.js';
+
+// Importamos el archivo de las rutas 
+import citasRoutes from '../routes/RoutesCitas.js';
+
+// Definimos la variable para trabajar con Express
+const app = express();
+app.use(cors());
+app.use(express.json());
+app.use('/citas', citasRoutes );
+
+// Autenticación BD
+try {
+  await BD.authenticate();
+  console.log('Connection has been established successfully.');
+} catch (error) {
+  console.error('Unable to connect to the database:', error);
+}
+
+// Muestra mensaje en el navegador
+app.get('/', (req, res) => {
+  res.send("Hola mundo");
+})
+
+// Configuración del puerto del servidor
+app.listen(5000, () => {
+  console.log("El servidor esta corriendo ⚡ en http://localhost:5000/")
+});
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      El código comienza importando Express, CORS para manejar solicitudes de diferentes orígenes y la configuración de la base de datos desde 'db.js'. También importa las rutas de 'RoutesCitas.js'. Se crea una instancia de Express y se configuran los middleware para manejar JSON y CORS. Luego, se define la ruta '/citas' usando las rutas importadas. Se intenta autenticar la conexión con la base de datos y se imprime un mensaje de éxito o error en la consola. Además, hay una ruta de inicio que responde con "Hola mundo". Finalmente, el servidor se inicia en el puerto 5000 y se imprime un mensaje en la consola para confirmar la ejecución.
+    </div> 
+
+    <h3>Comprobación del método 'agregarCitas'</h3>
+    <p><img src="post-add.png" alt=""></p>
+
+
+
+    <p></p>
+    <a href="https://github.com/4shc/backend-mysql">
+      <img src="../../img/github-icon-min-min.png" alt="github.com/4shc/backend-mongo">
+    </a>
+    <span>Mira el repositorio en Github</span>
+
+    
+
+  </article>
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion28.js" type="module"></script>
+</body>
+
+</html>

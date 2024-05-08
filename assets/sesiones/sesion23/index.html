@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 23</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 23</h1>
+  <small class="fecha">11.04.2024 S23-M2</small>
+
+  <article id="algoritmo-bubble-sort">
+    <h2>Algoritmos / Bubble Sort</h2>
+    <p>Recorrer y comparar los elementos de la lista. A pesar de su ineficiencia, Bubble Sort sigue siendo útil para fines educativos o para ordenar pequeñas cantidades de datos donde la simplicidad es más importante que la velocidad.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Algoritmos / Bubble Sort
+function bubbleSort(nums){
+    for(let i = 0; i < nums.length; i++){
+      if(nums[i] > nums[i + 1]){
+        let j = nums[i + 1];
+        nums[i + 1] = nums[i];
+        nums[i] = j;
+        bubbleSort(nums);
+      }
+    }
+    return nums;
+}
+
+
+let arr = [12, 2, 3, 41, 5, 6, 7, 83, 9, 10, 11, 18, 13, 22, 34, 15, 56,35,66,8,87,98];
+console.log(arr);
+
+let res = bubbleSort(arr);
+console.log(res);
+
+      </code>
+    </pre> 
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Ejercicio 2
+function Burbuja(ndatos){
+  let n = ndatos.length;
+
+  for(let i = 0; i < n; i++){
+    for(let j = 0, l = n -1; j < l; j++){
+      if(ndatos[j] > ndatos[j+1]){
+        [ndatos[j], ndatos[j+1]] = [ndatos[j+1], ndatos[j]];
+      }
+    }
+  }
+  return ndatos;
+}
+
+let arr2 = [12, 2, 3, 41, 5, 6, 7, 83, 9, 10, 11, 18, 13, 22, 34, 15, 56,35,66,8,87,98];
+console.log(arr2);
+
+let result = Burbuja(arr2);
+console.log(result);
+
+      </code>
+    </pre>  
+
+  </article>
+
+  <article id="algoritmo-select-sort">
+    <h2>Algoritmos / Select Sort</h2>
+    <p>Selection Sort es un algoritmo de ordenamiento simple que divide el arreglo en dos partes: la parte ordenada y la parte no ordenada. En cada iteración, busca el elemento más pequeño en la parte no ordenada y lo intercambia con el primer elemento de la parte no ordenada. Esto significa que el elemento más pequeño siempre se coloca al principio de la parte ordenada. Este proceso se repite hasta que todos los elementos estén en su lugar, lo que resulta en un arreglo ordenado. Aunque no es eficiente para conjuntos de datos grandes debido a su complejidad cuadrática, es fácil de entender e implementar para conjuntos de datos pequeños o parcialmente ordenados.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Algoritmo Selection Sort
+function SelectionSort (ndatos){
+  let aux = [...ndatos];
+
+  for(let i = 0; i < ndatos.length; i++){
+
+    let min = aux.slice( i + 1)
+    
+    .reduce((a,e,j) => (e < aux [a] ? j + i +1: a), i);
+  
+  if(min !=i){
+    [aux[i], aux[min]] = [aux[min], aux[i]];
+  }
+}
+return aux;
+}
+
+let arr3 = [12, 2, 3, 41, 5, 6, 7, 83, 9, 10, 11, 18, 13, 22, 34, 15, 56,35,66,8,87,98];
+console.log(arr3);
+
+let result = SelectionSort(arr3);
+console.log(result);
+
+      </code>
+    </pre> 
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Algoritmo Selection Sort ejemplo 2
+function SelectionSort (arr){
+  // si solo tiene un elemento, no hay que ordenar nada
+  if(arr.length < 2) return arr;
+  let min; 
+  let index;
+
+  for (let i = 0; i < arr.length; i++){
+    min = arr[i]
+
+    for (let j = i + 1; j < arr.length; j++){
+      // compara el valor menor que tenemos con el próximo en la lista
+      if(min > arr[j]){
+        min = arr[j];
+        index = j;
+      }
+    }
+    // intercambia los valores, si encuentra uno mayor
+    if(index){
+      [arr[i], arr[index]] = [arr[index], arr[i]]
+      index = undefined;
+    }
+  }
+  return arr;
+}
+
+
+let arr3 = [12, 2, 3, 41, 5, 6, 7, 83, 9, 10, 11, 18, 13, 22, 34, 15, 56,35,66,8,87,98];
+console.log(arr3);
+
+let result = SelectionSort(arr3);
+console.log(result)
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+  <article id="algoritmo-insertion-sort">
+    <h2>Algoritmos / Insertion Sort</h2>
+    <p>Insertion Sort es un algoritmo simple de ordenamiento que recorre el arreglo de izquierda a derecha, insertando cada elemento en su posición correcta en la parte ordenada del arreglo. Comienza con un solo elemento (considerado ya ordenado) y luego compara cada elemento subsiguiente con los elementos en la parte ordenada, moviéndolos hacia la derecha hasta encontrar su posición adecuada. Este proceso continúa hasta que todos los elementos están en su lugar, lo que resulta en un arreglo ordenado. Aunque no es tan eficiente como otros algoritmos para grandes conjuntos de datos, es útil para conjuntos de datos pequeños o parcialmente ordenados.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Algoritmo insertionSort
+function insertionSort(arr){
+  let valorToInsert = arr[1];
+  let j;
+  for(let i = 1; i < arr.length; i++){
+    valToInsert = arr[i];
+    for(j = i - 1; j >= 0 && arr[j] > valToInsert; j-- ){
+      arr[j + 1] = arr[j]
+    }
+    arr[j + 1] = valToInsert;
+  }
+  return arr;
+}
+
+let arreglo = [12, 2, 3, 41, 5, 6, 7, 83, 9, 10, 11, 18, 13, 22, 34, 15, 56,35,66,8,87,98];
+let result = insertionSort(arreglo);
+console.log(arreglo);
+
+      </code>
+    </pre> 
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Algoritmo insertionSort ejercicio 2
+function InSort(val){
+  for(let i = 1; i < val.length; i++){
+    let j = i - 1
+    let aux = val[i]
+    while(j >= 0 && val[j] > aux){
+      val[j + 1] = val[j];
+      --j;
+    } 
+    val[j+1] = aux;
+  }
+  return val
+}
+
+let arreglo = [12, 2, 3, 41, 5, 6, 7, 83, 9, 10, 11, 18, 13, 22, 34, 15, 56,35,66,8,87,98];
+let result = InSort(arreglo);
+console.log(result);
+
+      </code>
+    </pre> 
+
+  </article>
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion23.js" type="module"></script>
+</body>
+
+</html>

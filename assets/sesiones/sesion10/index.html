@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/style-general.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 17</title>
+    <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+  </head>
+<body>
+  <nav class="nav">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 10</h1>
+  <small class="fecha">19.03.2024 S10-REPASO</small>
+
+  <article id="and-or">
+    <h2>And / Or</h2>
+    <p> <b>&&</b> y   <b>||</b> son operadores lógicos utilizados para combinar condiciones en expresiones condicionales.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+if( 5 == 4 || 6 == 8 ){
+  console.log("Si cumple la condición ");
+}else{
+  console.log("No cumple la condición ");
+} 
+      </code>
+    </pre>
+  </article>  
+  
+
+  <article id="switch">
+    <h2>Switch</h2>
+    <p>La sentencia <code>switch</code> en JavaScript es una estructura de control que te permite ejecutar diferentes bloques de código dependiendo del valor de una expresión. Es útil cuando tienes múltiples casos posibles y quieres ejecutar acciones específicas para cada uno.</p>
+    <p class="p-continue">Recuerda que es importante usar la palabra clave <code>break</code> después de cada caso para evitar que se ejecuten accidentalmente los bloques de código siguientes. Si no incluyes <code>break</code>, JavaScript continuará ejecutando los casos siguientes hasta encontrar un <code>break</code> o hasta llegar al final del switch.</p>
+    <p class="p-continue">También puedes usar el caso <code>default</code> como una opción por defecto si ninguno de los casos coinciden con el valor de la expresión. Esto te permite manejar casos no previstos de manera adecuada.</p>
+    
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+variable1= 4;
+
+switch (variable1){
+  case 1:
+    console.log("Variable es igual a uno");
+    break;
+  case 2:
+    console.log("Variable es igual a dos");
+    break;
+  case 3:
+    console.log("Variable es igual a tres");
+    break;
+  default:
+    console.log("El valor no coincide con ninguno de los casos definidos");
+    
+}
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js - Ejercicio 1</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejercicio 1.
+let creditos;
+let ingreso =  "Salas: ";
+creditos =2;
+
+switch (creditos){
+  case 1:
+    console.log("Tiene acceso a la sala niños de 5 a 8 años");
+    break;
+
+  case 2:
+    console.log("Tiene acceso a la sala niños de 7 a 9 años");
+    break;
+
+  case 3:
+    console.log("Tiene acceso a la sala niños de 9 a 12 años");
+    break;
+
+  case 4:
+    console.log("Tiene acceso a la sala niños de 12 a 15 años");
+    break;
+
+  default:
+}
+      </code>
+    </pre>
+  </article>  
+
+  <pre class="dark">
+    <div class="pre-head">
+      <span class="tag js">js - Ejercicio 2 / Usando <cite>Prompt</cite></span>
+      <button class="copy-button">📋 Copiar código</button>
+    </div>
+    <code class="language-js">
+let creditos;
+let ingreso =  "Salas: ";
+creditos = parseInt(prompt("Cuantos creditos vas a comprar ?"));
+
+switch (creditos){
+  case 1:
+    ingreso += " de niños a 5 a 8 años";
+    break;
+
+  case 2:
+    ingreso +=  " de niños a 8 a 10 años";
+    break;
+
+  case 3:
+    ingreso +=  " de niños a 10 a 13 años";
+    break;
+
+  case 4:
+    ingreso +=  " de niños a 14 a 16 años";
+    break;
+
+  default:
+}
+alert(ingreso);
+    </code>
+  </pre>
+</article> 
+
+
+
+<article id="ciclo-for">
+  <h2>For</h2>
+  <p>En este caso, se utiliza el <b>bucle for</b> para <code>calcular el factorial</code> de un número ingresado por el usuario. El bucle for se encarga de iterar sobre los números desde 1 hasta el número ingresado, multiplicándolos entre sí para calcular el factorial. </p>
+  <pre class="dark">
+    <div class="pre-head">
+      <span class="tag js">js</span>
+      <button class="copy-button">📋 Copiar código</button>
+    </div>
+    <code class="language-js">
+// Factorial
+let n;
+n = parseInt(prompt("Ingresa tu número para hallar su factoría"));
+var fact = 1;
+
+for(let i = 1; i<= n; i++ ){
+  fact *= i;
+}
+alert(" El factorial del número " + n + " es " + fact);
+
+    </code>
+  </pre>
+
+  <pre class="dark">
+    <div class="pre-head">
+      <span class="tag js">js - Factoría otra forma</span>
+      <button class="copy-button">📋 Copiar código</button>
+    </div>
+    <code class="language-js">
+let num;
+let result = ""; // Inicializamos la variable result
+num = parseInt(prompt("Ingresa tu número para hallar su factoría"));
+
+for (let i = 1; i <= num; i++){
+
+  if (i % 2 === 0){
+    result += i + "\n";
+    alert(result);
+  }
+}
+    </code>
+  </pre>
+</article>  
+
+<article id="for-of-in">
+  <h2>For of/in</h2>
+  <p>
+    El bucle <code>for...of </code> se utiliza para recorrer los <code>valores</code> de un iterable, como un array. Mientras tanto, el bucle <code>for...in</code> se usa para recorrer las <code>propiedades</code> de un <code>objeto</code>. El primero sigue el orden de los elementos, mientras que el segundo no garantiza un orden específico.</p>
+  <pre class="dark">
+    <div class="pre-head">
+      <span class="tag js">js</span>
+      <button class="copy-button">📋 Copiar código</button>
+    </div>
+    <code class="language-js">
+let lista_personas = [
+  {
+    "nombre" : "carlos",
+    "tipo" : "persona",
+    "id" : "435",
+  },
+  {
+    "nombre": "hugo",
+    "tipo" : "persona",
+    "id" : "876",
+  },
+  {
+    "nombre": "daniel",
+    "tipo" : "persona",
+    "id" : "673",
+  }
+  ]
+  for(let personas of lista_personas){
+  console.log(personas.nombre);
+  console.log(personas.id);
+
+  for (let propiedad in personas){
+    console.log(propiedad);
+  }
+}
+    </code>
+  </pre>
+
+</article>  
+
+
+
+<article id="while">
+  <h2>While</h2>
+  <p>Es como una puerta que se abre y cierra según una condición. Imagina que tienes una tarea que quieres repetir, pero no sabes cuántas veces necesitarás hacerlo. Con <code>while</code>, puedes hacer que esa tarea se repita mientras se cumpla una condición específica. </p>
+  <pre class="dark">
+    <div class="pre-head">
+      <span class="tag js">js</span>
+      <button class="copy-button">📋 Copiar código</button>
+    </div>
+    <code class="language-js">
+n = 0;
+x = 0;
+
+while (n < 3){
+  n++;
+  x += n;
+}
+console.log(x);
+
+let contadorr = 0;
+let iterarr = true;
+
+while(iterarr == true){
+  console.log(contadorr);
+  if(contadorr == 5){
+    iterarr = false;
+  }
+  contadorr++;
+}
+console.log(contador);
+
+    </code>
+  </pre>
+
+</article>  
+
+
+  <p class="p-continue">Enlace while: <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/while">click</a>, Enlace Ejercicios: 
+    <a href="https://www.alvarezjoseph.com/blog/ejercicios-resueltos-javascript/#ejercicios-resueltos-de-introduccion-a-javascript">click</a>, 
+    Estudiar <b>ciclos</b>
+  </p>
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion10.js"></script>
+</body>
+</html>

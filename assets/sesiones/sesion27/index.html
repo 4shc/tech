@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 27</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 27</h1>
+  <small class="fecha">17.04.2024 S27-M2</small>
+
+
+  <article id="crud-express-mongodb-tres">
+    <h2>CRUD / Express y MongoDB - Parte 3</h2>
+    <p>En esta tercera parte terminamos de agregar las funciones de <b>mostrarUnCliente</b>, <b>eliminarClientes</b> y <b>modificarClientes</b> para nuestro archivo <b><i>controllers/ClienteController.js</i></b></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">controller/ClienteController.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Exportamos nuestro modelo
+const Cliente = require('../models/Cliente');
+
+// Creamos una función para agregar clientes
+exports.agregarClientes = async(req, res) => {
+  try {
+    let clientes = new Cliente(req.body)
+    await clientes.save();
+    res.send(clientes);
+    
+  } catch (error) {
+    console.log(error)
+    res.status(500).send('hubo un error al agregar un cliente 😕')
+  }
+}
+
+// Creamos la función para mostrar clientes
+exports.mostrarClientes = async (req, res) => {
+  try {
+    const clientes = await Cliente.find();
+    res.json(clientes);
+    
+  } catch (error) {
+    console.log(error)
+    res.status(500).send('hubo un error al mostrar un cliente 😕')
+  }
+}
+
+//Session27
+// Creamos la función para mostrar un solo cliente
+exports.mostrarUnCliente = async(req, res) =>{
+  try {
+    let clientes = await Cliente.findById(req.params.id);
+    if(!clientes){
+      res.status(404).json({msg: "No se encuentra cliente con ese ID"})
+    }
+
+    res.send(clientes);
+  } catch (error) {
+    console.log(error)
+    res.status(500).send('hubo un error al buscar un cliente 😕');
+  }
+}
+// Creamos la función para eliminar clientes
+exports.eliminarClientes = async(req, res) =>{
+  try {
+    let clientes = await Cliente.findById(req.params.id);
+
+    if(!clientes){
+      res.status(404).json({msg: "El cliente no existe"});
+      return
+    }
+
+    await Cliente.findOneAndDelete({_id: req.params.id});
+    res.json({msg: "El cliente fue eliminado"});
+    
+  } catch (error) {
+    console.log(error)
+    res.status(500).send('hubo un error al eliminar un cliente 😕')
+  }
+}
+// Creamos la función para modificar un cliente
+exports.modificarClientes = async(req, res) =>{
+  try {
+    let cliente = await Cliente.findByIdAndUpdate(req.params.id, req.body, {new: true});
+
+    if(!cliente){
+      return res.status(404).send("Cliente no encontrado"); 
+    }
+    res.json(cliente)
+  } catch (error) {
+    console.log(error)
+    res.status(500).send('hubo un error al modificar un cliente 😕');
+  }
+}
+
+      </code>
+    </pre> 
+
+    <P>Nuestro archivo <b><i>routes/RouterCliente.js</i></b> con las nuevas rutas quedaría configurado de esta manera: </P>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">ruter/RouterCliente.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+const express = require('express');
+const router = express.Router();
+const ClienteController = require('../controllers/ClienteController');
+
+router.post('/', ClienteController.agregarClientes);
+router.get('/', ClienteController.mostrarClientes);
+
+// Sesión 27
+router.get('/:id', ClienteController.mostrarUnCliente);
+router.delete('/:id', ClienteController.eliminarClientes);
+router.put('/:id', ClienteController.modificarClientes);
+
+module.exports = router;
+
+      </code>
+    </pre> 
+
+    <p>Y de esa manera queda nuestro backend para esta entrega a continuación se integra un nuevo modulo llamado <b>Productos</b> donde pondremos a prueba todo lo anterior visto usando <b>Postam</b> </p>
+
+    <h3>Actividad Añadiendo nuevo modulo</h3>
+    <p>Crearemos un nuevo modulo llamado 'Productos' donde se usaran las mismas funciones para ingresar, mostrar, eliminar y modificar datos de nuestra base de datos.</p>
+    <p>Primero creamos una colección de datos en nuestro Compass llamada 'Productos'</p>
+    <p><img src="new-colecction.png" alt=""></p>
+    <p>Ahora en nuestro proyecto de node lo único que vamos a necesitar es crear tres archivos nuevos:</p>
+
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">estructura de carpetas</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+↓ config
+    db.js
+↓ controllers 
+    ClienteController.js
+    <b style="color: #cdb632c0">ProductosController.js</b> // New
+↓ models 
+    Cliente.js
+    <b style="color: #cdb632c0">Productos.js</b> // New
+→ node_modules
+↓ routes 
+    RouterCliente.js
+    <b style="color: #cdb632c0">RouterProductos.js</b> // New
+→ src 
+  .env
+  package-lock.json
+  package.json
+
+      </code>
+    </pre> 
+
+    <p>La configuración de los archivos seria igual a los anteriores usados para 'Clientes', solo se modifican algunas rutas y nombres de variables</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">controller/ProductosController.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Exportamos nuestro modelo
+const Productos = require('../models/Productos');
+
+// Creamos una función para agregar productos
+exports.agregarProductos = async(req, res) => {
+  try {
+    let productos = new Productos(req.body)
+    await productos.save();
+    res.send(productos);
+    
+  } catch (error) {
+    console.log(error)
+    res.status(500).send('hubo un error al agregar un producto 😕')
+  }
+}
+
+// Creamos la función para mostrar clientes
+exports.mostrarProductos = async (req, res) => {
+  try {
+    const productos = await Productos.find();
+    res.json(productos);
+    
+  } catch (error) {
+    console.log(error)
+    res.status(500).send('hubo un error al mostrar un cliente 😕')
+  }
+}
+
+// Creamos la función para mostrar un solo producto
+exports.mostrarUnProducto = async(req, res) =>{
+  try {
+    let productos = await Productos.findById(req.params.id);
+    if(!productos){
+      res.status(404).send("No se encuentra el producto con ese ID")
+    }
+    res.send(productos);
+
+  } catch (error) {
+    console.log(error)
+    res.status(500).send('hubo un error al buscar un producto 😕');
+  }
+}
+
+// Creamos la función para eliminar productos
+exports.eliminarProductos = async(req, res) =>{
+  try {
+    let productos = await Productos.findById(req.params.id);
+
+    if(!productos){
+      res.status(404).json({msg: "El producto no existe"});
+      return
+    }
+
+    await Productos.findOneAndDelete({_id: req.params.id});
+    res.json({msg: "El producto fue eliminado"});
+    
+  } catch (error) {
+    console.log(error)
+    res.status(500).send('hubo un error al eliminar un producto 😕')
+  }
+}
+
+// Creamos la función para modificar un producto
+exports.modificarProductos = async(req, res) =>{
+  try {
+    let productos = await Productos.findByIdAndUpdate(req.params.id, req.body, {new: true});
+
+    if(!productos){
+      return res.status(404).send("Producto no encontrado"); 
+    }
+    res.json(productos)
+  } catch (error) {
+    console.log(error)
+    res.status(500).send('hubo un error al modificar un producto😕');
+  }
+} 
+
+      </code>
+    </pre> 
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código define funciones para agregar, mostrar, buscar, eliminar y modificar productos en una base de datos MongoDB con Express. Utiliza el modelo Productos para realizar operaciones como agregar nuevos productos con save(), mostrar todos con find(), buscar por ID con findById(), eliminar con findOneAndDelete(), y modificar con findByIdAndUpdate(). Cada función maneja errores, enviando respuestas adecuadas como mensajes 404 o 500 según corresponda.
+    </div>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">models/Productos.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+const mongoose  = require ('mongoose');
+
+const productosSchema = mongoose.Schema({
+
+  marca: {
+    type: String,
+    required: true
+  }, 
+  categoria: {
+    type: String,
+    required: true
+  }, 
+  proveedor: {
+    type: String,
+    required: true
+  }, 
+  referencia: {
+    type: String,
+    required: true
+  }, 
+  precio: {
+    type: Number,
+    required: true
+  }, 
+
+}, {versionkey: false});
+
+module.exports = mongoose.model('Productos', productosSchema);      
+
+      </code>
+    </pre> 
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      El código define un esquema de mongoose para el modelo Productos. Este esquema especifica las propiedades de los productos, incluyendo marca, categoría, proveedor, referencia y precio, con sus respectivos tipos y requisitos. Al final, el esquema se exporta como un modelo de mongoose llamado Productos, listo para ser utilizado en la aplicación para interactuar con la base de datos MongoDB.
+    </div>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">routes/RoutersProductos.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+const express = require('express');
+const router = express.Router();
+const ProductosController = require('../controllers/ProductosController');
+
+router.post('/', ProductosController.agregarProductos);
+router.get('/', ProductosController.mostrarProductos);
+router.get('/:id', ProductosController.mostrarUnProducto);
+router.delete('/:id', ProductosController.eliminarProductos);
+router.put('/:id', ProductosController.modificarProductos);
+
+module.exports = router; 
+        
+      </code>
+    </pre> 
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      En este ultimo fragmento se configura el enrutador en Express para que maneje diferentes rutas relacionadas con los productos. Utiliza el controlador ProductosController para gestionar las operaciones CRUD (Crear, Leer, Actualizar, Eliminar). Las rutas definidas incluyen agregar un producto, mostrar todos los productos, mostrar un producto específico por su ID, eliminar un producto por su ID y modificar un producto existente. Al exportar este enrutador, se facilita su uso y modularidad en la aplicación principal.
+    </div>
+
+    <p>Finalmente agrega la ruta de el modulo <b>Productos</b> al index</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/index.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+        // Aquí iniciaremos express
+        const express = require('express');
+        
+        //new sesión 26
+        const conectarBD = require('../config/db');
+        const cors = require ('cors');
+        
+        // Configurando express y puerto
+        const app = express();
+        const port = 5000;
+        
+        //new sesión 26
+        app.use(express.json());
+        // Aca van las rutas de los módulos
+        app.use('/api/clientes', require('../routes/RoutersCliente'));
+        
+        // New sesión 27
+        // Creando nuevo modulo para productos
+        app.use('/api/productos', require('../routes/RoutersProductos'));
+        // New sesión 27
+        
+        //enlazamos la conexión de la BD
+        conectarBD();
+        app.use(cors());
+        
+        // Puerto donde se lanza el servidor
+        app.listen(port, () => console.log('Nuestro servidor se encuentra conectado 😎 http://localhost:', port));
+        
+        app.get('/', (req, res) =>{
+          res.send('Bienvenido, nuestro servidor esta configurado');
+        });
+      </code>
+    </pre>
+    <h3>Probando el nuevo modulo 'Productos'</h3>
+    <p>Vamos a usar <b>Postam</b> para probar cada una de la funciones, tanto de ingresar, mostrar eliminar etc.</p>
+    
+    <h4>.agregarProductos</h4>
+    <p><img src="add-post.png" alt=""></p>
+
+    <h4>.mostrarProductos</h4>
+    <p><img src="view-get.png" alt=""></p>
+  
+    <h4>.mostrarUnProducto </h4>
+    <p><img src="view-get-uno.png" alt=""><img src="view-get-uno-error.png" alt=""></p>
+      
+    <h4>.eliminarProductos</h4>
+    <p><img src="delete.png" alt=""></p>
+      
+    <h4>.modificarProductos</h4>
+    <p><img src="modificar.png" alt=""></p>
+
+    <a href="https://github.com/4shc/backend-mongo">
+      <img src="../../img/github-icon-min-min.png" alt="github.com/4shc/backend-mongo">
+    </a>
+    <span>Mira el repositorio en Github</span>
+      
+  </article>
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion27.js" type="module"></script>
+</body>
+
+</html>

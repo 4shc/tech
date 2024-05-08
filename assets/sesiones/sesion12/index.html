@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 17</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 12</h1>
+  <small class="fecha">21.03.2024 S12-REPASO</small>
+
+  <article id="filter-ejer">
+    <h2>Filter - Ejercicio</h2>
+    <p>Crea un programa que muestre los empleador por salarios según la condición. Debes usar <code>Filter</code> </p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const Empleados = [
+
+  {
+  nombre: 'Julian Amador',
+  cargo: 'Administrador de empresas',
+  salario: 320000,
+  },
+
+  {
+  nombre: 'Pedro Arango',
+  cargo: '',
+  salario: 1500000,
+  },
+
+  {
+  nombre: 'Maria Diaz',
+  cargo: 'Gerente',
+  salario: 5000000,
+  },
+
+  {
+  nombre: 'Natalia Sepulveda',
+  cargo: 'Secretaria',
+  salario: 1800000,
+  },
+
+  {
+  nombre: 'Antonio Rodriguez',
+  cargo: 'Ingeniero apoyo',
+  salario: 2800000,
+  }
+
+]
+
+// Creamos la constante con el filtro
+
+const calcular = Empleados.filter(
+  value => value.salario <= 2500000
+)
+
+//Finalizamos llamando la función calcular:
+console.log(calcular);
+
+      </code>
+    </pre>
+  </article>
+
+  <article id="promise">
+    <h2>Promise</h2>
+    <h3>setTimeout</h3>
+    <p><code>setTimeout</code> es una función en JavaScript que permite ejecutar otra función después de un cierto
+      período de tiempo. Esto es útil para tareas como animaciones o actualizaciones de la interfaz de usuario que
+      queremos realizar en el futuro sin interrumpir el flujo normal del código.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+setTimeout(() => {
+    console.log("Hola desarrollador");
+  }, 4000
+);
+
+setTimeout(() => {
+    console.log("Como estas?");
+  }, 6000
+);
+
+setTimeout(() => {
+    console.log("Comencemos!");
+  }, 7000
+);
+
+      </code>
+    </pre>
+    <h3>Promise</h3>
+    <p>Es un objeto que maneja operaciones asíncronas y permite gestionar su finalización o falla de manera más clara.
+      Ayuda a evitar el anidamiento excesivo de callbacks y facilita el manejo de resultados asincrónicos.</p>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const miPromesa = new Promise((resolve, reject) => {
+  // Simulando una operación asincrónica (en este caso, un simple temporizador)
+  setTimeout(() => {
+    const exito = true; // Cambia esto a false para simular un fallo
+    if (exito) {
+      resolve("La operación fue exitosa.");
+    } else {
+      reject("La operación falló.");
+    }
+  }, 2000); // Simulamos una espera de 2 segundos
+});
+
+miPromesa
+  .then(resultado => {
+    console.log("Éxito:", resultado);
+  })
+  .catch(error => {
+    console.error("Error:", error);
+  });
+        </code>
+      </pre>
+
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Tenemos el siguiente arreglo
+const Peliculas = [
+
+  {
+    nombre: 'Duro de matar',
+    año: 1992,
+  },
+
+  {
+    nombre: 'Ninja',
+    año: 2009,
+  },
+
+  {
+    nombre: 'La isla',
+    año: 2013,
+  },
+
+  {
+    nombre: 'La venganza',
+    año: 2021,
+  },
+
+];
+
+// Creamos la función
+function getPeliculas(){
+  return new Promise((resolve, reject) =>{ //Usando la promesa, 'reject' se usa en caso de que la condición no se cumpla
+    if(Peliculas == 0){ // Validamos si mi arreglo no esta vació 
+      reject(new Error ("No hay datos de las Peliculas"))
+    }
+    setTimeout(() =>{ resolve(Peliculas);}, 6000)
+  });
+}
+
+getPeliculas()
+.then ((Peliculas) => console.log(Peliculas))
+.catch ((error) => console.log(err.message));
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Cuando se genera la promesa si se cumple la condición de lanza el <code>.then</code>. De lo contrario se lanza
+      <code>.catch</code>
+    </div>
+
+    <h3>Ejercicio 2 sobre promesas</h3>
+    <p>Vamos a ver otro ejercicio</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const Datos = [
+
+  {
+    Productos: "Pan",
+    precio: 1800,
+  },
+  
+  {
+    Productos: "Huevos",
+    precio: 16000,
+  },
+
+  {
+    Productos: "Leche",
+    precio: 6000,
+  },
+
+];
+
+function getDatos(){
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(Datos);
+    }, 2500); // Corrección: cerrar paréntesis y agregar punto y coma aquí
+  });
+}
+
+getDatos().then((Datos) => console.log(Datos));
+
+      </code>
+    </pre>
+
+  </article>
+
+  <article id="promise-ejer">
+    <h2>Promesas Ejercicios </h2>
+    <p>Realizar una función que no pase parámetros, si debe definir dentro de la función un calculo matemático, usando promesas.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Definimos variables globales.
+let a = 45;
+let b = 35;
+let res;
+// Creamos la función promesa
+function Operaciones(){
+  return new Promise((resolve, reject) => {
+    res = a * b;
+    if(res === 1575){
+      resolve("El resultado es correcto")
+    }else{
+      reject('error')
+    }
+  });
+} 
+
+Operaciones().then(function(mensage){
+  console.log(mensage)
+}).catch(function(error){
+  console.log(error);
+})
+
+      </code>
+    </pre>
+
+    <h3>Ejercicio 3</h3>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Creamos la función principal. Evalúa si el parámetro ingresado es un número de no serlo retorna el método Reject de la promesa con un error.
+function cuadradoPromise(value) {
+  if( typeof value !== "number"){
+      return Promise.reject(
+          `Error, el valor "${value}" ingresado no es un número`
+      );
+  }
+  
+  // Definimos la promesa y con un setTimeout retornamos en una variable result la multiplicación del parámetro ingresado, el tiempo que tarda en ejecutarse es aleatorio gracias a .random()
+  return new Promise((resolve, reject) => {
+      setTimeout(() => {
+          resolve({
+              value,
+              result: value * value,
+          });
+      }, 0 | (Math.random() * 1000 ));    
+  });
+}
+
+// Instanciamos los objetos imprimiendo en consola cuadradoPromise y dando un valor
+cuadradoPromise(0)
+  .then((obj) =>{
+      // console.log(obj);
+      console.log("Inicio Promise")
+      console.log(`Promise: ${obj.value}, ${obj.result}`);
+      return cuadradoPromise(1);
+  })
+  .then((obj) =>{
+      console.log(`Promise: ${obj.value}, ${obj.result}`);
+      return cuadradoPromise(2);
+  })
+  .then((obj) =>{
+      console.log(`Promise: ${obj.value}, ${obj.result}`);
+      return cuadradoPromise(3);
+  })
+  .then((obj) =>{
+      console.log(`Promise: ${obj.value}, ${obj.result}`);
+      return cuadradoPromise(4);
+  })
+  .then((obj) =>{
+      console.log(`Promise: ${obj.value}, ${obj.result}`);
+      return cuadradoPromise("5"); // Al no ser un number se salta el error del catch o reject
+  })
+  .then((obj) =>{
+      console.log(`Promise: ${obj.value}, ${obj.result}`);
+      return cuadradoPromise("Fin Promise");
+  })
+  .catch((err) => console.error(err));
+
+  
+</code>
+</pre>
+
+
+  <p>Refuerza lo visto en <a href="https://jonmircha.com/javascript-asincrono">Js-Asincrono/JhonMircha</a></p>
+  </article>
+
+  <article id="async-await">
+    <h2>Async/Await</h2>
+    <p>Permite escribir código asíncrono de manera más clara y fácil de entender. Permite que las funciones asíncronas
+      se vean y se comporten como funciones síncronas, lo que hace que el código sea más legible y mantenible. Con
+      Async/Await, puedes escribir código asíncrono de forma secuencial, evitando el anidamiento excesivo de callbacks o
+      el encadenamiento de promesas. Esto simplifica la lógica de programación y hace que sea más sencillo manejar
+      errores.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+function resolveAfter25Seconds(){
+  return new Promise ((resolve) => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 2000); // Corrección: ajustar el tiempo a 25000 milisegundos (25 segundos)
+  });
+}
+
+asyncCall();
+
+async function asyncCall(){
+  console.log('calling');
+  const result = await resolveAfter25Seconds();
+  console.log(result);
+  // Expected output: "resolved"
+}
+
+      </code>
+    </pre>
+
+    <h3>Ejercicio 1 </h3>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const Datos = [
+  {
+    Productos: "Pan",
+    precio: 1800,
+  },
+  {
+    Productos: "Huevos",
+    precio: 16000,
+  },
+  {
+    Productos: "Leche",
+    precio: 6000,
+  },
+];
+
+function getDatos() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(Datos);
+    }, 2500);
+  });
+}
+
+async function RecibirDatos() {
+  const D = await getDatos();
+  console.log(D);
+}
+
+RecibirDatos();
+      
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Para mayor claridad consulta el siguiente enlace <a href="https://www.freecodecamp.org/espanol/news/como-usar-async-await-para-escribir-un-codigo-mejor-en-javascript/">Click</a>.
+    </div>
+
+    <h3>Ejercicio 2 </h3>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+  const EquiposF = [
+  {
+    Nombre: 'Cali',
+    Ciudad: 'Barranquilla',
+    AñoFundado: '',
+  },
+  {
+    Nombre: '',
+    Ciudad: '',
+    AñoFundado: '',
+  },
+  {
+    Nombre: '',
+    Ciudad: '',
+    AñoFundado: '',
+  },
+];
+
+function getEquipos() {
+  return new Promise((resolve, reject) => {
+    if (EquiposF.length === 0) {
+      reject(new Error("No hay datos en el arreglo"));
+    }
+    setTimeout(() => {
+      resolve(EquiposF);
+    }, 2500);
+  });
+}
+
+async function mostrarDatos() {
+  try {
+    const equipo = await getEquipos();
+    console.log(equipo);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+mostrarDatos();
+      
+      </code>
+    </pre>
+
+
+
+  </article>
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion12.js"></script>
+</body>
+
+</html>

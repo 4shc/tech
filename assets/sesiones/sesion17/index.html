@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 17</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 17</h1>
+  <small class="fecha">03.04.2024 S17-M2</small>
+
+  <article id="arrays-some">
+    <h2>Arrays / some()</h2>
+    <p>Se utiliza para calcular la suma de todos los elementos en un array. Puedes pasarle un array de números como argumento y devolverá la suma total de esos números. Es una forma conveniente y rápida de obtener la suma de valores numéricos en un array sin tener que realizar un bucle manualmente.</p>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Arrays / some()
+const programador = [
+  {
+    id: 1,
+    nombre: "Juan",
+    lenguaje: "Php",
+  },
+  {
+    id: 2,
+    nombre: "Jey",
+    lenguaje: "Python",
+  },
+  {
+    id: 3,
+    nombre: "Bryan",
+    lenguaje: "Javascript",
+  },
+];
+
+// Devuelve 'true' o 'false'
+const songg = programador.some(post => post.id == 1);
+console.log(songg);
+
+      </code>
+    </pre> 
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Usando 'include' y 'some'
+const ind = programador.some(posta => posta.lenguaje.includes("Php"));
+console.log(ind);
+
+      </code>
+    </pre> 
+    
+  </article>
+
+  <article id="arrays-filter-include">
+    <h2>Arrays / filter() + include()</h2>
+    <p>La combinación de filter() e includes() en JavaScript te permite filtrar elementos de un array según ciertos criterios y luego verificar si un valor específico está presente en el array resultante. Esto facilita la búsqueda y el filtrado de datos en un array de manera rápida y eficiente.</p>
+      
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const Empleados = [
+  {
+    nombre: "Dario",
+    salario: "1200000",
+    aux: "750000",
+    sot: "web",
+  },
+  {
+    nombre: "Steve",
+    salario: "2300000",
+    aux: "300000",
+    sot: "web",
+  },
+  {
+    nombre: "Laura",
+    salario: "5000000",
+    aux: "1200000",
+    sot: "web",
+  },
+];
+
+const prueba = Empleados.filter(post => post.nombre.includes('Laura'));
+console.log(prueba);
+
+      </code>
+    </pre> 
+
+  </article>
+
+  <article id="arrays-every">
+    <h2>Arrays / every()</h2>
+    <p>Se utiliza para verificar si todos los elementos de un array cumplen una condición específica definida por una función de prueba. Retorna true si todos los elementos pasan la prueba, de lo contrario, retorna false. Es útil cuando necesitas validar si todos los elementos de un array satisfacen ciertos criterios, como por ejemplo, verificar si todos los números en un array son mayores que cierto valor. </p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const vali = Empleados.every( post => post.sot.includes("web"));
+console.log(vali);
+
+      </code>
+    </pre>  
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 2 
+const arreglo = [35, 28, 31, 25, 29];
+const test = (elemento) => elemento > 20;
+let res = arreglo.every(test);
+console.log(res);
+
+      </code>
+    </pre> 
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 2 
+const arreglo1 = [35, 28, 31, 25, 29];
+const copia = arreglo1.every(element => element > 20);
+console.log(copia);
+
+      </code>
+    </pre> 
+  
+  </article>
+
+  <article id="arrays-concat">
+    <h2>Arrays / concat()</h2>
+    <p>Se usa para unir dos o más arrays en uno nuevo. Este método crea un nuevo array con los elementos de los arrays originales, sin modificar los arrays originales. Es útil cuando necesitas combinar datos de múltiples fuentes sin alterar los arrays originales.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const ejem1 = ["A", "Maria", "Julian"];
+const ejem2 = ["B", "Jairo", "Roberth"];
+const union = ejem1.concat(ejem2);
+console.log(union);
+
+      </code>
+    </pre> 
+  
+  </article>
+
+  <article id="arrays-include">
+    <h2>Arrays / include()</h2>
+    <p>Verifica si un array contiene un elemento específico, retornando true o false. Es una forma rápida y sencilla de comprobar la presencia de un valor en un array.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const arreg = [35, 28, 56, 45];
+console.log(arreg.includes(35));
+console.log(arreg.includes(20));
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+  <article id="arrays-join">
+    <h2>Arrays / join()</h2>
+    <p>Se utiliza para combinar los elementos de un array en una cadena de texto, separando cada elemento con un separador especificado. Esto es útil cuando necesitas representar un array como una cadena legible para humanos o cuando deseas construir una URL o una consulta SQL dinámica, por ejemplo. Por defecto, el separador es una coma, pero puedes especificar cualquier carácter o cadena para separar los elementos.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const alf = ["a", "b", "c", "d", "e"];
+console.log(alf)
+console.log(alf.join());
+console.log(alf.join(' '));
+console.log(alf.join('-'));
+console.log(alf.join(', '));
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+  <article id="arrays-reduce">
+    <h2>Arrays / reduce()</h2>
+    <p>Se utiliza principalmente para reducir un array a un solo valor. Permite ejecutar una función reductora en cada elemento del array, acumulando un resultado final. Esta función toma cuatro argumentos: el acumulador, el valor actual, el índice actual y el array completo. Es especialmente útil para sumar valores, encontrar el máximo o mínimo, concatenar strings, entre otras operaciones.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Usando reduce() 
+const numeros = [1,2,3,4,5,6,7,8,9,10];
+const num = numeros.reduce((a, b) => a + b ); 
+console.log(num);
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+  <article id="arrays-index-of">
+    <h2>Arrays / indexOf()</h2>
+    <p>Se utiliza para buscar el índice de la primera ocurrencia de un elemento dentro de un array. Si el elemento no se encuentra, devuelve -1. Es una herramienta útil para verificar la existencia de un elemento en un array y para obtener su posición si está presente.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Usando indexOf()
+const frutas = ["Manzana", "Pera", "Piña"];
+const valor = frutas.indexOf('Piña');
+const valor1 = frutas.indexOf('Manzana');
+const valor2 = frutas.indexOf('Maracuya');
+const valor3 = frutas.indexOf(3);
+console.log(valor, valor1, valor2, valor3);
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+  <article id="arrays-find-index">
+    <h2>Arrays / findIndex()</h2>
+    <p>Se utiliza para buscar el índice de la primera ocurrencia que cumple con una condición especificada en un array. Si encuentra un elemento que satisface la condición, devuelve el índice de ese elemento. Si no encuentra ninguna coincidencia, devuelve -1. Es útil cuando se desea encontrar la posición de un elemento en función de ciertos criterios de búsqueda dentro de un array.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const frutasA = ["Manzana", "Pera", "Piña"];
+const valorr = frutasA.findIndex(a => a == "Pera");
+console.log(valorr);
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+  <article id="arrays-shift">
+    <h2>Arrays / shift()</h2>
+    <p>Se utiliza para eliminar el primer elemento de un array y devolver ese elemento eliminado. Después de llamar a shift(), el array se modifica, y su longitud se reduce en uno. Todos los demás elementos en el array se desplazan hacia una posición inferior, es decir, sus índices se reducen en uno. Este método es útil cuando se desea eliminar el primer elemento de un array y utilizar su valor en alguna operación.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Usando shift()
+const frutasB = ["Manzana", "Pera", "Piña"];
+frutasB.shift();
+console.log(frutasB);
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+  <article id="arrays-unshift">
+    <h2>Arrays / unshift()</h2>
+    <p>Se utiliza para agregar uno o más elementos al principio de un array y devuelve la nueva longitud del array. Los elementos proporcionados como argumentos son agregados en el orden en que se pasan, desplazando los elementos existentes hacia posiciones de índice superior para hacer espacio para los nuevos elementos. Es útil cuando se desea agregar elementos al inicio de un array de manera eficiente.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const frutasC = ["Manzana", "Pera", "Piña"];
+frutasC.unshift("Zapote");
+console.log(frutasC);
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+  <article id="arrays-reverse">
+    <h2>Arrays / reverse() </h2>
+    <p>Se utiliza para invertir el orden de los elementos en un array. Este método modifica el array original, alterando el orden de sus elementos de tal manera que el primer elemento pasa a ser el último y viceversa. Es útil cuando se necesita cambiar el orden de los elementos de un array de manera rápida y sencilla. Por ejemplo, si se tiene un array con datos en orden ascendente y se desea mostrarlos en orden descendente, se puede utilizar reverse() para lograr este efecto de manera eficiente.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const frutasD = ["Manzana", "Pera", "Piña"];
+console.log(frutasD);
+console.log(frutasD.reverse());
+console.log(frutasD);
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+  <article id="arrays-toReverse">
+    <h2>Arrays / toReverse()</h2>
+    <p>Cambie el orden de un array sin modificar el original</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Usando toReverse()
+const frutasE = ["Manzana", "Pera", "Piña"];
+console.log(frutasE.toReversed());
+console.log(frutasE);
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+  <article id="arrays-splice">
+    <h2>Arrays / splice()</h2>
+    <p>Permite modificar un array al agregar, eliminar o reemplazar elementos en una posición específica. Se especifica la posición de inicio y la cantidad de elementos a eliminar, con la opción de agregar nuevos elementos en esa posición. Este método altera el array original y devuelve los elementos eliminados, o un array vacío si no se eliminan elementos.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 1
+const meses = ['Jan', 'March', 'April', 'June' ];
+meses.splice(1,0,'Feb');
+console.log(meses);
+
+meses.splice(4, 1,'May');
+console.log(meses);
+
+      </code>
+    </pre> 
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 2
+const splicee = ["Nombre", "Apellido", "Correo", "Direction" ];
+splicee.splice(1, 0, "Direction");
+console.log(splicee);
+
+      </code>
+    </pre> 
+
+
+  </article>
+
+
+
+
+ <!--     
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+code
+
+      </code>
+    </pre> 
+ -->
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion17.js" type="module"></script>
+</body>
+
+</html>

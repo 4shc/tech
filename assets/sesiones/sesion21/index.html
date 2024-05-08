@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 21</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1 id="sesion-21">SESIÓN 21</h1>
+  <small class="fecha">09.04.2024 S21-M2</small>
+
+  <article id="arboles-ejercicios">
+    <h2>Árbol binario ejercicios</h2>
+    <p>Completando el <a href="https://informatecdigital.com/algoritmos/arboles-binarios-en-javascript-una-guia-completa/">ejercicio de la clase anterior, completo aquí</a></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Árbol binario
+// Creamos la clase principal 'Nodo', con tres propiedades.
+class Node {
+  // 3 propiedades 
+  constructor(valor){
+    this.valor = valor;
+    this.izq = null;
+    this.der = null;
+  }
+}
+
+// Creamos la clase 'Árbol' con una sola propiedad
+class Arbol{
+  constructor(){
+    this.raiz = null;
+  }
+
+  // Creamos un método a función de inserción a nuestra clase 'Arbol', 
+  Agregar(valor){
+    const newNode = new Node(valor);
+    if(this.raiz === null){
+      this.raiz = newNode;
+    }else
+      this.AgregarNode(this.raiz, newNode);
+  }
+
+  // Creamos la función agregar a los nodos Izq o Der.
+  AgregarNode(nodo, newNode){
+    if(newNode.valor < nodo.valor){
+      if(nodo.izq === null){
+        nodo.izq = newNode;
+      }else{
+        this.AgregarNode(nodo.izq, newNode);
+      }
+    }else{
+      if(nodo.der === null){
+        nodo.der = newNode;
+      }else{
+        this.AgregarNode(nodo.der, newNode);
+      }
+    }
+  }
+
+  // Función buscar
+  Buscar(valor){
+    return this.BuscarNodo(this.raiz, valor)
+  }
+  // Función Buscar nodo
+  BuscarNodo(nodo, valor){
+    if(nodo === null || nodo.valor === valor ){
+      return nodo;
+    }else if(valor < nodo.valor){
+      return this.BuscarNodo(nodo.izq, valor)
+    }else{
+      return this.BuscarNodo(nodo.der, valor)
+    }
+  }
+
+  // Función eliminar nodo
+  eliminar(valor){
+    this.raiz = this.eliminarNodo(this.raiz, valor);
+  }
+  eliminarNodo(nodo, valor) {
+    if (nodo === null) {
+      return null;
+    } else if (valor < nodo.valor) {
+      nodo.izq = this.eliminarNodo(nodo.izq, valor);
+      return nodo;
+    } else if (valor > nodo.valor) {
+      nodo.der = this.eliminarNodo(nodo.der, valor);
+      return nodo;
+    } else {
+      if (nodo.izq === null && nodo.der === null) {
+        return null;
+      } else if (nodo.izq === null) {
+        return nodo.der;
+      } else if (nodo.der === null) {
+        return nodo.izq;
+      } else {
+        const sucesor = this.encontrarSucesor(nodo.der);
+        nodo.valor = sucesor.valor;
+        nodo.der = this.eliminarNodo(nodo.der, sucesor.valor);
+        return nodo;
+      }
+    }
+  }
+  // Función  para encontrar el lugar donde ubicar a el valor eliminado
+  encontrarSucesor(nodo) {
+    let sucesor = nodo;
+    while (sucesor.izq !== null) {
+      sucesor = sucesor.izq;
+    }
+    return sucesor;
+  }
+
+
+  // Recorrido en orden de un árbol binario
+  recorridoEnOrden() {
+    this.recorrerEnOrden(this.raiz);
+  }
+  recorrerEnOrden(nodo) {
+    if (nodo !== null) {
+      this.recorrerEnOrden(nodo.izq);
+      console.log(nodo.valor);
+      this.recorrerEnOrden(nodo.der);
+    }
+  }
+
+  // Recorrido en pre-orden
+  recorridoPreOrden() {
+    this.recorrerPreOrden(this.raiz);
+  }
+  recorrerPreOrden(nodo) {
+    if (nodo !== null) {
+      console.log(nodo.valor);
+      this.recorrerPreOrden(nodo.izq);
+      this.recorrerPreOrden(nodo.der);
+    }
+  }
+
+  // Recorrido en post-orden
+  recorridoPostOrden() {
+    this.recorrerPostOrden(this.raiz);
+  }
+  
+  recorrerPostOrden(nodo) {
+    if (nodo !== null) {
+      this.recorrerPostOrden(nodo.izq);
+      this.recorrerPostOrden(nodo.der);
+      console.log(nodo.valor);
+    }
+  }
+}
+
+// comprobando la función Agregar()
+const newArbol = new Arbol();
+newArbol.Agregar("D");
+console.log(newArbol);
+newArbol.Agregar("B");
+console.log(newArbol);
+newArbol.Agregar("C");
+console.log(newArbol);
+newArbol.Agregar("a");
+console.log(newArbol);
+newArbol.Agregar("A");
+console.log(newArbol);
+newArbol.Agregar("c");
+console.log(newArbol);
+newArbol.Agregar("b");
+console.log(newArbol);
+
+// Comprobante de la función EliminarNodo()
+console.log(newArbol.eliminar("C"));
+
+// Comprobando recorrido en orden
+console.log("Comprobando recorrido en orden");
+console.log(newArbol.recorridoEnOrden());
+
+// Comprobando recorrido en pre-orden
+console.log("Comprobando recorrido en pre-orden");
+console.log(newArbol.recorridoPreOrden());
+
+// Comprobando recorrido en post-orden
+console.log("Comprobando recorrido en post-orden");
+console.log(newArbol.recorridoPostOrden());
+        
+      </code>
+    </pre>  
+  </article>
+
+
+  <article id="grafos">
+    <h2>Grafos</h2>
+    <p>Los grafos en JavaScript son estructuras de datos que consisten en un conjunto de nodos (vértices) conectados entre sí por aristas (aristas). Pueden ser dirigidos o no dirigidos y se utilizan para representar una amplia variedad de relaciones, desde redes sociales hasta mapas de carreteras. En JavaScript, los grafos se pueden implementar utilizando objetos y arrays, donde los nodos son objetos y las aristas son arrays de nodos o parejas de nodos. Las operaciones comunes en grafos incluyen añadir y eliminar nodos y aristas, buscar caminos entre nodos, y realizar recorridos para explorar el grafo en diferentes maneras.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// We create a class for the graph
+class Graph{
+    // The graph has only one property which is the adjacency list
+    constructor() {
+        this.adjacencyList = {}
+    }
+    // The addNode method takes a node value as parameter and adds it as a key to the adjacencyList if it wasn't previously present
+    addNode(node) {
+        if (!this.adjacencyList[node]) this.adjacencyList[node] = []
+    }
+    // The addConnection takes two nodes as parameters, and it adds each node to the other's array of connections.
+    addConnection(node1,node2) {
+        this.adjacencyList[node1].push(node2)
+        this.adjacencyList[node2].push(node1)
+    }
+    // The removeConnection takes two nodes as parameters, and it removes each node from the other's array of connections.
+    removeConnection(node1,node2) {
+        this.adjacencyList[node1] = this.adjacencyList[node1].filter(v => v !== node2)
+        this.adjacencyList[node2] = this.adjacencyList[node2].filter(v => v !== node1)
+    }
+    // The removeNode method takes a node value as parameter. It removes all connections to that node present in the graph and then deletes the node key from the adj list.
+    removeNode(node){
+        while(this.adjacencyList[node].length) {
+            const adjacentNode = this.adjacencyList[node].pop()
+            this.removeConnection(node, adjacentNode)
+        }
+        delete this.adjacencyList[node]
+    }
+}
+const spain = new Graph()
+spain.addNode("Cordoba")
+spain.addNode("Sevilla")
+spain.addNode("Toledo")
+spain.addNode("Madrid")
+spain.addConnection("Sevilla", "Cordoba")
+spain.addConnection("Cordoba", "Toledo")
+spain.addConnection("Toledo", "Madrid")
+console.log(spain)
+// Graph {
+//   adjacencyList: {
+//     Cordoba: [ 'Sevilla', 'Toledo' ],
+//     Sevilla: [ 'Cordoba' ],
+//     Toledo: [ 'Cordoba', 'Madrid' ],
+//     Madrid: [ 'Toledo' ]
+//   }
+// }      
+
+      </code>
+    </pre>  
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo web
+// We create a class for the graph
+class Graph{
+  // The graph has only one property which is the adjacency list
+  constructor() {
+      this.adjacencyList = {}
+  }
+  // The addNode method takes a node value as parameter and adds it as a key to the adjacencyList if it wasn't previously present
+  addNode(node) {
+      if (!this.adjacencyList[node]) this.adjacencyList[node] = []
+  }
+  // The addConnection takes two nodes as parameters, and it adds each node to the other's array of connections.
+  addConnection(node1,node2) {
+      this.adjacencyList[node1].push(node2)
+      this.adjacencyList[node2].push(node1)
+  }
+  // The removeConnection takes two nodes as parameters, and it removes each node from the other's array of connections.
+  removeConnection(node1,node2) {
+      this.adjacencyList[node1] = this.adjacencyList[node1].filter(v => v !== node2)
+      this.adjacencyList[node2] = this.adjacencyList[node2].filter(v => v !== node1)
+  }
+  // The removeNode method takes a node value as parameter. It removes all connections to that node present in the graph and then deletes the node key from the adj list.
+  removeNode(node){
+      while(this.adjacencyList[node].length) {
+          const adjacentNode = this.adjacencyList[node].pop()
+          this.removeConnection(node, adjacentNode)
+      }
+      delete this.adjacencyList[node]
+  }
+}
+const spain = new Graph()
+spain.addNode("Cordoba")
+spain.addNode("Sevilla")
+spain.addNode("Toledo")
+spain.addNode("Madrid")
+spain.addConnection("Sevilla", "Cordoba")
+spain.addConnection("Cordoba", "Toledo")
+spain.addConnection("Toledo", "Madrid")
+console.log(spain)
+// Graph {
+//   adjacencyList: {
+//     Cordoba: [ 'Sevilla', 'Toledo' ],
+//     Sevilla: [ 'Cordoba' ],
+//     Toledo: [ 'Cordoba', 'Madrid' ],
+//     Madrid: [ 'Toledo' ]
+//   }
+// }
+
+      </code>
+    </pre>  
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+//Ejemplo 2
+class Grafo{
+  // Solo maneja una sola propiedad
+  constructor(){
+    this.adjacencyList = {};
+  }
+
+  // Creamos la función que tomará el valor del nodo como parámetro y lo agrega como
+  //  parámetro y lo agrega como clave a adjacencyList
+  addVertices(node){
+    if(!this.adjacencyList[node]) this.adjacencyList[node] = [];
+  }
+  // Toma dos nodos como parámetros y lo agrega cada nodo a la matrix de conexionas
+  addArista(node1, node2){
+    this.adjacencyList[node1].push(node2);
+    this.adjacencyList[node2].push(node1); // Trabajando con nodos no dirigidos
+  }
+  // Va a tomar 2 nodos como parámetros y agrega cada nodo a la matrix de conexión
+  addArista2(node1, node2){
+    this.adjacencyList[node1].push(node2); // Trabajando con nodos dirigidos
+  }
+
+}
+
+const lista = new Grafo();
+lista.addVertices("A");
+lista.addVertices("B");
+lista.addVertices("C");
+lista.addVertices("D");
+lista.addVertices("E");
+console.log("Grafo no dirigido");
+console.log(lista);
+// Grafo no dirigido
+lista.addArista("A", "B");
+lista.addArista("A", "C");
+lista.addArista("C", "D");
+lista.addArista("D", "E");
+console.log(lista);
+
+
+const lista2 = new Grafo();
+lista2.addVertices("A");
+lista2.addVertices("B");
+lista2.addVertices("C");
+lista2.addVertices("D");
+lista2.addVertices("E");
+console.log("Grafo dirigido");
+
+// Grafo dirigido
+lista2.addArista2("A", "B");
+lista2.addArista2("B", "C");
+lista2.addArista2("C", "E");
+lista2.addArista2("E", "F");
+lista2.addArista2("E", "D");
+lista2.addArista2("D", "B");
+console.log(lista2);
+
+      </code>
+    </pre>  
+    <p><a href="https://jovid.win/estructuras-de-datos-en-javascript/#graphs">Afianza conocimientos sobre grafos</a></p>
+  </article>
+
+  <article id="grafos-ejer">
+    <h2>Grafos / Departamentos y Capitales</h2>
+    <p>Realizar un grafo donde tengan departamentos de Colombia y deben crear un enlace con su respectiva ciudad, es dirigido:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js - Solución ejercicio:</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Solución ejercicio:
+class Grafo{
+  // Solo maneja una sola propiedad
+  constructor(){
+    this.adjacencyList = {};
+  }
+
+  // Creamos la función que tomará el valor del nodo como parámetro y lo agrega como
+  //  parametro y lo agrega como clave a adjacencyList
+  addVertices(node){
+    if(!this.adjacencyList[node]) this.adjacencyList[node] = [];
+  }
+  // Toma dos nodos como parámetros y lo agrega cada nodo a la matrix de conexionas
+  addArista(node1, node2){
+    this.adjacencyList[node1].push(node2);
+    this.adjacencyList[node2].push(node1); // Trabajando con nodos no dirigidos
+  }
+  // Va a tomar 2 nodos como parámetros y agrega cada nodo a la matrix de conexión
+  addArista2(node1, node2){
+    this.adjacencyList[node1].push(node2); // Trabajando con nodos dirigidos
+  }
+
+}
+
+const departamento = new Grafo();
+
+departamento.addVertices("Cundinamarca");
+departamento.addVertices("Bogotá");
+departamento.addVertices("Antioquia");
+departamento.addVertices("Medellin");
+departamento.addVertices("Valle del Cauca");
+departamento.addVertices("Cali");
+departamento.addVertices("Atlántico");
+departamento.addVertices("Barranquilla");
+
+departamento.addArista2("Cundinamarca", "Bogotá");
+departamento.addArista2("Antioquia", "Medellin");
+departamento.addArista2("Valle del Cauca", "Cali");
+departamento.addArista2("Atlántico", "Barranquilla");
+
+
+console.log(departamento); 
+
+      </code>
+    </pre>  
+
+    <p><a href="https://jovid.win/estructuras-de-datos-en-javascript/#graphs">Afianza conocimientos sobre grafos</a></p>
+  </article>
+
+  <article id="grafos-bfs">
+    <h2>Grafos / BFS</h2>
+    <p>El BFS (Breadth-First Search) o Búsqueda en Anchura es un algoritmo de recorrido de grafos que explora todos los nodos vecinos de un nodo dado antes de pasar a los nodos vecinos de esos nodos. Utiliza una estructura de datos cola para mantener un registro de los nodos por visitar. Es útil para encontrar el camino más corto en un grafo no ponderado y para descubrir la estructura de un grafo. En JavaScript, se puede implementar BFS utilizando una cola y un conjunto para registrar nodos visitados, y se puede aplicar en diversos escenarios como navegación web, recomendaciones de amigos en redes sociales, y resolución de problemas en inteligencia artificial, entre otros.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js - Solución ejercicio:</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 2 - usando prototipos y ALGORITMO 'BFS' https://www.youtube.com/watch?v=_Yf8tneauJ8&t=2s y ejercicio en https://medium.com/@05.ankitarora/searching-algorithms-bfs-and-dfs-in-javascript-with-examples-306d176006de
+class Graph {
+  constructor() {
+    this.adjList = new Map();
+  }
+
+  addNode(node) {
+    this.adjList.set(node, []);
+  }
+
+  addEdge(node, neighbor) {
+    this.adjList.get(node).push(neighbor);
+    this.adjList.get(neighbor).push(node);
+  }
+
+  bfs(startNode) {
+    const visited = new Set();
+    const queue = [startNode];
+    
+    visited.add(startNode);
+
+    while (queue.length !== 0) {
+      const current = queue.shift();
+      console.log(current);
+
+      const neighbors = this.adjList.get(current);
+
+      for (const neighbor of neighbors) {
+        if (!visited.has(neighbor)) {
+          visited.add(neighbor);
+          queue.push(neighbor);
+        }
+      }
+    }
+  }
+}
+
+// Example Usage
+const graph = new Graph();
+
+graph.addNode('A');
+graph.addNode('B');
+graph.addNode('C');
+graph.addNode('D');
+graph.addEdge('A', 'B');
+graph.addEdge('A', 'C');
+graph.addEdge('B', 'D');
+
+graph.bfs('A');
+console.log(graph);
+console.log(graph.bfs('A'));
+
+      </code>
+    </pre>  
+
+    <p><a href="https://www.youtube.com/watch?v=_Yf8tneauJ8&t=2s y ejercicio en https://medium.com/@05.ankitarora/searching-algorithms-bfs-and-dfs-in-javascript-with-examples-306d176006de">Afianza conocimientos sobre algoritmos BFS</a></p>
+  </article>
+
+  <article id="grafos-dfs">
+    <h2>Grafos / DFS</h2>
+    <p>El DFS (Depth-First Search) o Búsqueda en Profundidad es un algoritmo de recorrido de grafos que sigue una rama del árbol de expansión hasta llegar a un nodo hoja antes de retroceder y explorar las ramas no exploradas. Utiliza una estructura de datos pila o recursión para mantener un registro de los nodos por visitar. Es útil para encontrar ciclos en grafos, recorrer y buscar en estructuras de datos como árboles y grafos, y para la topología y ordenamiento topológico. En JavaScript, se puede implementar DFS de manera recursiva o iterativa, y se aplica en algoritmos de búsqueda en bases de datos, resolución de laberintos, y sistemas de recomendación, entre otros.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js - Solución ejercicio:</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 3 - usando prototipos y ALGORITMO 'DFS' https://www.youtube.com/watch?v=_Yf8tneauJ8&t=2s y ejercicio en https://medium.com/@05.ankitarora/searching-algorithms-bfs-and-dfs-in-javascript-with-examples-306d176006de
+class Graph {
+  constructor() {
+    this.adjList = new Map();
+  }
+
+  addNode(node) {
+    this.adjList.set(node, []);
+  }
+
+  addEdge(node, neighbor) {
+    this.adjList.get(node).push(neighbor);
+    this.adjList.get(neighbor).push(node);
+  }
+
+  dfs(node, visited = new Set()) {
+    console.log(node);
+    visited.add(node);
+
+    const neighbors = this.adjList.get(node);
+
+    for (const neighbor of neighbors) {
+      if (!visited.has(neighbor)) {
+        this.dfs(neighbor, visited);
+      }
+    }
+  }
+}
+
+// Example Usage
+const graph = new Graph();
+
+graph.addNode('A');
+graph.addNode('B');
+graph.addNode('C');
+graph.addNode('D');
+graph.addEdge('A', 'B');
+graph.addEdge('A', 'C');
+graph.addEdge('B', 'D');
+
+graph.dfs('A');
+
+      </code>
+    </pre>  
+
+    <p><a href="https://www.youtube.com/watch?v=_Yf8tneauJ8&t=2s y ejercicio en https://medium.com/@05.ankitarora/searching-algorithms-bfs-and-dfs-in-javascript-with-examples-306d176006de">Afianza conocimientos sobre algoritmos DFS</a></p>
+  </article>
+
+  <article id="algoritmo-busqueda-lineal">
+    <h2>Algoritmos / búsqueda lineal</h2>
+    <p>La búsqueda lineal, también conocida como búsqueda secuencial, es un método simple y directo para encontrar un elemento en una lista o array. En JavaScript, este algoritmo recorre el array elemento por elemento hasta encontrar el valor buscado o llegar al final del array. Es sencillo de implementar, pero no es el más eficiente para listas grandes. Su complejidad es O(n), donde n es el número de elementos en el array. Aunque no es el algoritmo más rápido, es útil cuando no se conoce la estructura o cuando la lista no está ordenada.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js - Solución ejercicio:</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Algoritmos de búsqueda lineal
+let array1 = [1,2,3,4,5,6,7,8,9];
+
+function BusquedaLineal(array1, val){
+  for(let i = 0; i < array1.length; i++){
+    if(array1[i] == val){
+      return i;
+    }
+  }
+  return -1;
+} 
+
+console.log(BusquedaLineal(array1, 9));      
+
+      </code>
+    </pre>  
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js - Solución ejercicio:</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Algoritmos de búsqueda lineal forma 2 -error!
+
+let arregloLetras = ["a", "b","c","d","e","f",]
+function buscador(elem, arregloLetras){
+  for(let i = in arregloLetras){
+    if(arregloLetras[i] == elem) return i; 
+  }
+  return -1;
+}
+
+console.log(buscador("d", arregloLetras));
+      </code>
+    </pre>  
+
+  </article>
+
+ 
+
+
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion21.js" type="module"></script>
+</body>
+
+</html>

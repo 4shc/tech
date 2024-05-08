@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 16</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 16</h1>
+  <small class="fecha">02.04.2024 S16-M2</small>
+
+  <article id="arrays-metodos">
+    <h2>Arrays</h2>
+    <p>Son estructuras de datos que te permiten almacenar múltiples valores en una sola variable. Puedes acceder a los elementos del array mediante un índice numérico y realizar diversas operaciones, como agregar, eliminar y modificar elementos. Son dinámicos, lo que significa que pueden crecer o reducir su tamaño durante la ejecución del programa, y son una herramienta fundamental en la programación JavaScript para organizar y manipular conjuntos de datos.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// ## ARRAYS
+let lista = ["Manzana","Pera",23, 25, "Hola mundo"];
+console.log(lista);
+lista.push("Hola"); // Agregar un elemento al final
+console.log(lista);
+console.log(lista[2]);
+console.log(lista[4]);
+console.log(lista.length);
+
+
+let copia = lista.slice(0, 3);
+console.log(copia);
+console.log(lista);
+
+lista.pop(); // Eliminar el último elemento
+console.log(lista);
+
+      </code>
+    </pre> 
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo:
+const prueba = [
+  1,2,"true", "Bienvenido", 
+    ["F", "Y", 8, 
+      [3,4, "Hola", "Maria"]
+    ] 
+  ];
+
+console.log(prueba[4] [3] [3]);
+
+      </code>
+    </pre>
+  
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo: 
+const arreglo = Array.of("x", "y", "Hola", "Dario", 8, 9, 0);
+console.log(arreglo);
+
+      </code>
+    </pre>  
+  </article>
+
+
+  <article id="arrays-fill">
+    <h2>Array / .fill()</h2>
+    <p>Se utiliza para llenar todos los elementos de un array con un valor estático dado. Puedes especificar el valor que deseas asignar a cada elemento del array y opcionalmente indicar el índice de inicio y fin del rango en el que deseas aplicar la operación de llenado. Esto es útil cuando deseas inicializar un array con un valor predeterminado o cuando necesitas rellenar parte de un array con un valor específico.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 1
+const valor = Array(200).fill(0);
+console.log(valor);
+
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 2
+const array1 = [1 , 2, 3, 4];
+
+console.log(array1.fill(0, 2, 4));
+console.log(array1.fill(5, 1 ));
+console.log(array1.fill(6));
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 3
+const frutas = ["Lulo", "Fresa", "Manzana", "Papaya"];
+let primerE = frutas[0];
+console.log(primerE);
+
+      </code>
+    </pre>
+
+  </article>
+
+  <article id="arrays-foreach">
+    <h2>Arrays / .forEach()</h2>
+    <P>Es un método que permite recorrer todos los elementos de un array y ejecutar una función para cada uno de ellos. Esta función recibe el valor de cada elemento como argumento y puede ser utilizada para realizar operaciones en cada elemento del array de manera sencilla y eficiente.</P>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const frutas = ["Lulo", "Fresa", "Manzana", "Papaya"];
+
+// Recorriendo Ejemplo 1. Arrays ForEach
+frutas.forEach(function(el, index){
+  console.log(`&lt;li id = "${index}"&gt; ${el} &lt;/li&gt;`);
+})
+
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Recorriendo Ejemplo 2. Arrays ForEach
+const npruebas = [10,20,30,40,50,60];
+npruebas.forEach(function(e){
+  console.log(e);
+})
+
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Recorriendo Ejemplo 3. Arrays ForEach
+const frutass = ["Lulo", "Fresa", "Manzana", "Papaya", "Melocotón", "Mora", "Piña" ];
+frutass.forEach( e => 
+  console.log(e));
+
+      </code>
+    </pre>
+
+  </article>
+
+  <article id="arrays-filter">
+    <h2>Arrays / .filter()</h2>
+    <p>Crea un nuevo array con elementos que cumplen un criterio definido por una función de prueba. Esta función evalúa cada elemento del array y devuelve un nuevo array con los elementos que pasan la prueba. Es una forma eficiente de filtrar elementos basados en condiciones específicas sin modificar el array original.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo 1 - con objetos
+const Empleados = [
+  {
+    nombre : "Carlos",
+    cargo  : "Web master",
+    salario  : "5000000",
+  },
+  {
+    nombre : "Natalia",
+    cargo  : "Diseñadora",
+    salario  : "3000000",
+  },
+  {
+    nombre : "Gina",
+    cargo  : "Gerente",
+    salario  : "4000000",
+  },
+];
+
+const calcular = Empleados.filter(value => value.salario >= 4000000);
+console.log(calcular);
+
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo trayendo según el numero de caracteres, solo funciona con strings
+const frutas2 = ["Manzana", "Pera","Ajo", "Piña","Durazno", 123, 12, "uva"];
+const res = frutas2.filter(valor => valor.length > 4);
+console.log(res);
+
+      </code>
+    </pre>
+
+  </article>
+
+  <article id="arrays-find">
+    <h2>Arrays / find()</h2>
+    <p>Se utiliza para encontrar el primer elemento en un array que cumple con cierta condición definida en una función de prueba. Permite buscar un elemento específico en un array según criterios específicos y devuelve el primer elemento que cumple con la condición o undefined si no se encuentra ningún elemento que la cumpla. Es una herramienta útil y eficiente para búsquedas en arrays.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+const desarrollo = [
+  {
+    id: 1,
+    lenguaje: "Javascript",
+    programacion: "Web y escritorio",
+  },
+  {
+    id: 2,
+    lenguaje: "Php",
+    programacion: "Web y escritorio",
+  },
+  {
+    id: 3,
+    lenguaje: "Java",
+    programacion: "Web y escritorio",
+  },
+];
+
+// find() recorre el arreglo y trae la primera coincidencia que encuentre.
+const result = desarrollo.find(post => post.lenguaje == "Php");
+console.log(result);
+    
+      </code>
+    </pre>
+  
+  </article>
+
+  <article id="arrays-map">
+    <h2>Arrays / map()</h2>
+    <p>Se utiliza para crear un nuevo array transformando cada elemento de un array existente mediante una función de transformación definida. Esta función recibe cada elemento del array como argumento y devuelve el resultado de aplicar la transformación deseada a ese elemento. .map() es útil para modificar cada elemento de un array de manera independiente y crear un nuevo array con los resultados de estas transformaciones, sin modificar el array original. Es una herramienta poderosa para operaciones de mapeo y transformación de datos en JavaScript.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Ejemplo uno:
+const programador = [
+  {nombre: "Adrian", apellido: "Duran", lenguajes: "php",},
+  {nombre: "Daniela", apellido: "Amaya", lenguajes: "Java y C#",},
+  {nombre: "Sergio", apellido: "Montaño", lenguajes: ".net",},
+  {nombre: "Duvan", apellido: "Diaz", lenguajes: "php"}
+];
+
+// Usando .map()
+const estructuras  = programador.map(pro =>{
+  return{
+    id: pro.nombre,
+    lenguaje: pro.apellido,
+    programacion: pro.lenguajes,
+    datos: `${pro.nombre} - ${pro.lenguajes}`
+  }
+});
+console.log(estructuras);
+    
+      </code>
+    </pre>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Ejemplo dos:
+let numeros = [10, 20, 30, 40];
+let multiplicar = 2;
+
+let productos = numeros.map(numero => numero * multiplicar);
+console.log(productos);
+    
+      </code>
+    </pre>
+    <p><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#ordenando_con_map">Repasa el uso del método .map() aquí</a></p>
+  </article>
+
+  <article id="arrays-sort">
+    <h2>Arrays / sort()</h2>
+    <p>Ordena los elementos de un array alfabéticamente o numéricamente, modificando el array original. Por defecto, ordena alfabéticamente, pero puede usar una función personalizada para un criterio específico. Es una forma rápida de ordenar arrays.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Método sort(), re-ordena los elementos del array de la 'A' a la 'Z'
+const miArray = [5, 12,8,130,44,78,98];
+const orden1 = miArray.sort((a,b) => a - b);
+console.log(orden1);
+console.log(miArray);
+
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo dos:
+const miArray = [
+  {id: 3, nombre: "Nidia", edad: 22},
+  {id: 1, nombre: "Carl", edad: 66},
+  {id: 2, nombre: "Jesus", edad: 55},
+  {id: 5, nombre: "Ryan", edad: 44},
+  {id: 4, nombre: "Albert", edad: 33},
+];
+// Ordenar por id menor a mayor:
+miArray.sort((a, b) => a.id - b.id);
+console.log(miArray);
+/*
+// Ordenar por edad menor a mayor:
+miArray.sort((a, b) => a.edad - b.edad);
+console.log(miArray);
+*/
+/*
+// Ordenar por nombre menor a mayor:
+miArray.sort((a, b)  => a.nombre.localeCompare(b.nombre));
+console.log(miArray);
+*/
+
+      </code>
+    </pre>
+    <p><a href="https://www.todojs.com/usar-correctamente-el-metodo-sort/">Aprende cuando usar el método .sort() aquí</a></p>
+  </article>
+
+  <article id="arrays-tosorted">
+    <h2>Arrays / toSorted()</h2>
+    <p>ordena los elementos del array de la 'A' a la 'Z' sin re-ordenar el array original</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Método toSorted(), ordena los elementos del array 
+// de la 'A' a la 'Z' sin re-ordenar el array original
+const miArray2 = [5, 12,8,130,44,78,98];
+const orden2 = miArray2.toSorted((a,b) => a - b);
+console.log(orden2);
+console.log(miArray2);
+
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Ejemplo dos:
+const sorti = ["padre","Madre","Padre","madre", 1, 2, 3, "hijo", "Hijo" ];
+sorti.sort();
+console.log(sorti);
+
+      </code>
+    </pre>  
+
+  </article>
+
+  <article id="tarea-comparador">
+    <h2>Tarea comparador</h2>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// función comparar
+function compare(a,b){
+  if(a < b ){
+    return -1;
+  }
+
+  if(a > b){
+    return 1;
+  }
+  
+  return 0;
+}
+
+console.log(compare(2,6));
+      </code>
+    </pre>  
+    <p>Usando el comparador anterior,crea un arreglo = 5 objetos(nombre,edad) y usa  sort para que( compare, estilo callback, es decir pasar a función el sort()) </p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// función comparar
+function compare(a, b){
+  if(a < b){
+    return -1;
+  }
+  if(a > b){
+    return 1;
+  }
+  return 0;
+}
+
+// Array de objetos
+const miArray = [
+  {nombre: "Nidia", edad: 22},
+  {nombre: "Carl", edad: 66},
+  {nombre: "Jesus", edad: 55},
+  {nombre: "Ryan", edad: 44},
+  {nombre: "Albert", edad: 33},
+];
+
+// Ordenar por edad de menor a mayor
+miArray.sort((a, b) => compare(a.edad, b.edad));
+
+console.log(miArray);
+
+      </code>
+    </pre>  
+
+
+  </article>
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion16.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 30</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 30</h1>
+  <small class="fecha">22.04.2024 S30-M2</small>
+
+
+  <article id="react-uno">
+    <h2>React - Parte 1</h2>
+    <img src="react-head.png" alt="">
+    <p>React es una biblioteca de JavaScript para construir interfaces de usuario interactivas y reutilizables. Permite crear componentes encapsulados que gestionan su propio estado y se componen para construir interfaces de usuario complejas. Con su modelo de programación basado en componentes y un enfoque en la eficiencia y el rendimiento, React ha ganado popularidad en el desarrollo web moderno.</p>
+    
+    <h3>Instalación React</h3>
+    <p>Existen muchas formas de instalar <b><code>REACT</code></b> en esta primer parte, lo instalaremos de la forma más básica, y que ha dia de hoy no se recomienda usar según la nueva documentación, mira: <cite><a href="https://www.youtube.com/watch?v=h1WLN9Gzbwc">'create-react-app ha muerto' de 'midudev'</a></cite></p>
+    
+      <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">terminal</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+npx create-react-app .
+
+      </code>
+    </pre>
+
+    <h3>Instalación Booststrap</h3>
+    <p>En este proyecto usaremos <b>Booststrap</b> puedes consultar su implementación y recursos <a href="https://getbootstrap.com/docs/5.0/components/buttons/">aquí</a> </p>
+    
+      <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">terminal</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+npm i bootstrap
+
+      </code>
+    </pre>
+    <p>Para que funcione de manera correcta, en el <b><code>src/index.js</code></b> deberás importar el siguiente archivo <b><code>.css</code></b></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/index.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+bootstrap/dist/css/bootstrap.min.css
+
+      </code>
+    </pre>
+    <p>Quedando configurado de la siguiente manera: </p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/index.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+// importamos bootstrap
+
+<b class="resalt bor4">import 'bootstrap/dist/css/bootstrap.min.css';</b>
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  &lt;React.StrictMode&gt;
+    &lt;Auth0Provider
+    domain="dev-yec4afk3otwxzw26.us.auth0.com"
+    clientId="LAKpTticMSq0nZGhv8RLzWwLxXylXcfR"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  &gt;
+    &lt;App /&gt;
+  &lt;/Auth0Provider&gt;,
+  &lt;/React.StrictMode&gt;
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+      </code>
+    </pre>
+
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      !Listo de esta manera ya podras usar bootstrap en tu proyecto!
+    </div>
+
+    <h3>Implementación de Cloudflare </h3>
+    <p>Cloudflare es una herramienta esencial para los propietarios de sitios web que buscan mejorar la seguridad, el rendimiento y la fiabilidad de sus sitios web y aplicaciones en línea</p>
+    <p>Para su implementación simplemente copia y pega el siguiente código dentro de las etiquetas &lt;head&gt;&lt;/head&gt; del archivo <b><code>public/index.html</code></b></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/index.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /&gt;
+
+      </code>
+    </pre>
+
+    <h3>Implementación de Auth0</h3>
+    <p>Auth0 es un servicio que nos provee todo el mecanismo para administrar la autorización y la autenticación de nuestras plataformas. Auth0 pretende darle a los desarrolladores y a las compañías seguridad en sus aplicaciones sin ser unos expertos. La idea es que Auth0 es el experto y simplemente provee todo ese conocimiento.</p>
+    <p>Ingresa a siguiente <a href="https://auth0.com/resources/whitepapers/Guia-del-Comprador-de-CIAM?gad_source=1">enlace de Auth0</a>  y regístrate. Seguidamente dentro del dashboard realiza las siguientes configuraciones</p>
+    <img src="auth0-one.png" alt="">
+    <img src="auth0-dos.png" alt="">
+    <img src="auth0-tres.png" alt="">
+    <img src="auth0-cuatro.png" alt="">
+    <img src="auth0-cinco.png" alt="">
+    <img src="auth0-seis.png" alt="">
+    <img src="auth0-siete.png" alt="">
+    <img src="auth0-ocho.png" alt="">
+    <img src="auth0-nueve.png" alt="">
+    <img src="auth0-diez.png" alt="">
+    <img src="auth0-once.png" alt="">
+    <p>Ahora entra al proyecto y en la terminal ejecuta:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/index.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+npm install @auth0/auth0-react
+
+      </code>
+    </pre>
+    <p>Seguidamente importo <b>Auth0</b> en el archivo <b><code>src/index.js</code></b>, y agrego el <b><code>Auth0Provider</code></b> de la siguiente manera:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/index.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+// importamos bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+// Importamos auth0
+
+<b class="resalt bor4">import { Auth0Provider } from '@auth0/auth0-react';</b>
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  &lt;React.StrictMode&gt;
+    
+<b style="display: block;" class="resalt bor4">
+  &lt;Auth0Provider
+    domain="dev-yec4afk3otwxzw26.us.auth0.com"
+    clientId="LAKpTticMSq0nZGhv8RLzWwLxXylXcfR"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  &gt;
+    &lt;App /&gt;
+  &lt;/Auth0Provider&gt;,
+</b>
+  
+  &lt;/React.StrictMode&gt;
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Si por alguna razón la autenticación con <b>Auth0</b> no funciona, debes comprobar que <code>clientId</code> sea el correcto. Para verificar esto ve a el dashboard y verifica: 
+      <img src="verificacion.png" alt="">
+    </div>
+    <h3>Creación de componentes Login/Logout </h3>
+    <p>Debemos crear tres archivos o componentes en la siguiente ruta <b><code>src/componentes</code></b></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Estructura de carpetas</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+↓ src
+  ↓ <b style="color: #d335fac0">componentes</b>// New
+      <b style="color: #cdb632c0">LoginButton.js</b>// New
+      <b style="color: #cdb632c0">LogoutButton.js</b>// New
+      <b style="color: #cdb632c0">Profile.js</b>// New
+
+      </code>
+    </pre>
+    <p>Cada uno con la siguiente configuración:</p>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/componentes/LoginButton.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+
+const LoginButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  return &lt;button className="btn btn-success" onClick={() =&gt; loginWithRedirect()}&gt;Log In&lt;/button&gt;;
+};
+
+export default LoginButton;
+
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/componentes/LogoutButton.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+
+const LogoutButton = () =&gt; {
+  const { logout } = useAuth0();
+
+  return (
+    &lt;button className="btn btn-danger" onClick={() =&gt; logout({ logoutParams: { returnTo: window.location.origin } })}&gt;
+      Log Out
+    &lt;/button&gt;
+  );
+};
+
+export default LogoutButton;
+
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/componentes/Profile.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+
+const Profile = () => {
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  if (isLoading) {
+    return &lt;div&gt;Loading ...&lt;/div&gt;;
+  }
+
+  return (
+    isAuthenticated && (
+      &lt;div&gt;
+        &lt;img src={user.picture} alt={user.name} /&gt;
+        &lt;h2&gt;{user.name}&lt;/h2&gt;
+        &lt;p&gt;{user.email}&lt;/p&gt;
+      &lt;/div&gt;
+    )
+  );
+};
+
+export default Profile;
+
+      </code>
+    </pre>
+    <p>Antes de mostrar esos componentes apliquemos algunos estilos <code>css</code> adicionales:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/app.css</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-css">
+
+body{
+  background-color: #dbd9e4de;
+}
+.btn{
+  margin: 1em;
+}
+.ver{
+  border: dashed 2px greenyellow;
+  background-color: #d6c8c8;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 4px;
+  width: 30%;
+}
+.nav-login{
+  text-align: right;
+}
+
+      </code>
+    </pre>    
+
+    <p>Ahora para mostrar esos componentes solo debes llamarlos en <code>src/app.js</code> asi:</p>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/app.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+import './App.css';
+import LoginButton from './Componentes/LoginButton';
+import LogoutButton from './Componentes/LogoutButton';
+import Profile from './Componentes/Profile';
+
+function App() {
+  return (
+    &lt;div className="App"&gt;
+        &lt;nav className='nav-login'&gt;
+          &lt;LoginButton/&gt;
+          &lt;LogoutButton/&gt;
+          &lt;Profile /&gt;
+        &lt;/nav&gt;     
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+
+      </code>
+    </pre>
+
+    <h3>Inicializando React y comprobando Auth0</h3>
+    <p>Inicializa React</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/app.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+npm run start
+
+      </code>
+    </pre>
+    <p>Comprobado la funcionalidad de Login de <b>Auth0</b></p>
+    <p>
+      <img src="comproba.png" alt="">
+      <img src="comproba-1.png" alt="">
+      <img src="comproba-2.png" alt="">
+      <img src="comproba-3.png" alt="">
+      <img src="comproba-4.png" alt="">
+    </p>
+    <p></p>
+    <a href="https://github.com/4shc/prueba_react">
+      <img src="../../img/github-icon-min-min.png" alt="https://github.com/4shc/prueba_react">
+    </a>
+    <span>Mira el repositorio en Github</span>
+
+
+    <h3>Componentes</h3>
+    <p>En React, los componentes son bloques de construcción reutilizables para crear interfaces de usuario. Pueden ser clases o funciones que retornan elementos de React. Los componentes encapsulan la lógica y la presentación, siguiendo el principio de responsabilidad única, facilitando así la escalabilidad y mantenimiento de las aplicaciones.</p>
+
+    <h3>props</h3>
+    <p>En React, los props (abreviatura de "properties") son un mecanismo para pasar datos de un componente padre a un componente hijo. Los props son objetos que contienen datos inmutables y se utilizan para personalizar o configurar componentes. Permiten que los componentes sean configurables y reutilizables al pasarles información externa.</p>
+    <p><b>Ejemplos 1 - </b> Usando <b><i>props</i></b> en el mismo archivo principal. En <b><code>src/app.js</code></b> tenemos lo siguiente</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/App.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">  
+
+import './App.css';
+
+function App() {
+
+  const nombre = "Ingeniero";
+
+  return (
+    &lt;div className="App"&gt;
+      &lt;h2&gt;{nombre}&lt;h2&gt;
+      &lt;Welcome name = "Sara" /&gt;
+      &lt;Welcome name = "Cahal" /&gt;
+      &lt;Welcome name = "Edite" /&gt;
+      &lt;h2&gt;{nombre}&lt;h2&gt;
+    &lt;/div&gt;
+  );
+}
+
+function Welcome(props){
+  return &lt;h1&gt;Hellos, {props.name}&lt;/h1&gt;;
+}
+
+export default App;
+
+      </code>
+    </pre>
+    <p>Como lo ideal es dejar <code>src/app.js</code> solo para llamar mis componentes, realizaremos otro ejercicio donde creamos nuestros componentes fuera de nuestro archivo principal</p>
+
+    <p><b>Ejercicio 2 -</b></p>
+    <p>Para nuestros componentes hemos creado una carpeta llamada <b><code>Componentes</code></b> dentro de ella crearemos un nuevo componente llamado <b><code>CompoSaludo.js</code></b>. De esa manera separaremos nuestro componente dejándolo fuera de nuestro archivo principal que seria <b><code>src/app.js</code></b></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Estructura de carpetas</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">       
+
+→ src 
+  → <b style="color: #d335fac0">componentes</b>// New
+        <b style="color: #cdb632c0">CompoSaludo.js</b>// New
+  App.js 
+  ...
+        
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/Componentes/CompoSaludo.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">       
+
+import React from "react";
+
+function Welcome(props){
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;
+}
+
+export default Welcome;
+
+      </code>
+    </pre>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/App.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">   
+import './App.css';        
+import Welcome from './Componentes/CompSaludo';      
+
+function App() {
+
+  const nombre = "Ingeniero";
+
+  return (
+    &lt;div className="App"&gt;
+      &lt;h2&gt;{nombre}&lt;h2&gt;
+      &lt;Welcome name = "Sara" /&gt;
+      &lt;Welcome name = "Cahal" /&gt;
+      &lt;Welcome name = "Edite" /&gt;
+      &lt;h2&gt;{nombre}&lt;h2&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+      </code>
+    </pre>
+
+    <p><b>Repasa</b> todo sobre <code>props</code> <a href="https://es.legacy.reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized">aquí</a></p>
+
+  </article>
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion30.js" type="module"></script>
+</body>
+
+</html>

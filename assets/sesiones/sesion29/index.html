@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 29</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 29</h1>
+  <small class="fecha">19.04.2024 S28-M2</small>
+
+
+  <article id="crud-express-mysql-dos">
+    <h2>CRUD / Express y MySql - Parte 2</h2>
+    <p>En esta sesión o entrega del dia, se da continuidad con las funciones o los métodos de nuestro <b>CRUD</b> con <b><i>Express y MySql</i></b> configuración que venimos trabajando en nuestro <b><code>Controller/CitasController.js</code></b>, recordando que en la anterior sesión ya habíamos iniciado con el método de ingresar nuevas citas. La nueva configuraron con los cambios de hoy quedaría de la siguiente forma:   </p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Controller/CitasController.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Importamos el modelo 
+import Citas from '../model/Citas.js';
+
+// Creamos los métodos CRUD
+
+// Creamos una función para agregar citas
+export const agregarCitas = async (req, res) => {
+  try {
+    await Citas.create(req.body)
+    res.json({msg: "Cita creada con éxito 😎"});
+    
+  } catch (error) {
+    res.json ({msg: error.message});
+  }
+}
+
+// Sesión 29
+// Función para mostrar todas las citas
+export const getAllCitas = async (req, res) =>{
+  try {
+    const citas = await Citas.findAll();
+    res.json(citas);
+    
+  } catch (error) {
+    res.json ({msg: error.message});
+  }
+}
+
+// Función para mostrar un sol cliente por ID
+export const getCita = async (req, res) => {
+  try {
+    const cita = await Citas.findAll({
+      where:{id:req.params.id}
+    });
+    res.json(cita[0]);
+  } catch (error) {
+    res.json({msg: error.message})
+  }
+}
+
+// Función para modificar una cita
+export const modificarCita = async (req, res) =>{
+  try {
+    await Citas.update(req.body, {
+      where:{id: req.params.id}
+    })
+    res.json({msg: "Se modifico una cita"})
+    
+  } catch (error) {
+    res.json({msg: error.message})
+  }
+}
+
+// Función para eliminar una cita
+export const eliminarCita = async (req, res) => {
+  try {
+    let citas = await Citas.findAll({where:{id: req.params.id}});
+    if (!citas[0]){
+      res.json({msg: "No se encuentra la cita"});
+    }
+    await citas[0].destroy();
+    res.json({msg: "Se elimino una cita"})
+  } catch (error) {
+    res.json({msg: error.message})
+  }
+}
+
+      </code>
+    </pre>
+  <div class="nota">
+    <span class="tag tag-nota">NOTA</span>
+    Este código define un conjunto de funciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar citas médicas utilizando un modelo llamado Citas. La función agregarCitas permite crear una nueva cita utilizando los datos proporcionados en el cuerpo de la solicitud HTTP. getAllCitas devuelve todas las citas almacenadas en la base de datos. getCita busca una cita específica por su ID. modificarCita actualiza una cita existente con los datos proporcionados. Finalmente, eliminarCita elimina una cita por su ID después de verificar su existencia. Cada función maneja los errores de manera similar, respondiendo con un mensaje de error si ocurre alguna excepción.
+  </div>
+
+    <p>Ahora configuramos las rutas en <b><code>routes/RoutesCitas.js</code></b></p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">routes/RoutesCitas.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Importamos express
+import express from 'express';
+
+// Importamos nuestro controlador
+import {agregarCitas} from '../controller/CitasController.js';
+import {getAllCitas} from '../controller/CitasController.js';
+import {getCita} from '../controller/CitasController.js';
+import {modificarCita} from '../controller/CitasController.js';
+import {eliminarCita} from '../controller/CitasController.js';
+
+const router = express.Router();
+router.post('/', agregarCitas);
+router.get('/', getAllCitas);
+router.get('/:id', getCita);
+router.put('/:id', modificarCita);
+router.delete('/:id', eliminarCita);
+
+export default router;
+
+      </code>
+    </pre>
+    
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código define un enrutador en Express que maneja las operaciones CRUD para citas médicas. Importa funciones específicas del controlador CitasController.js para agregar, obtener, modificar y eliminar citas. Las rutas configuradas incluyen agregar una nueva cita, obtener todas las citas, obtener una cita por su ID, modificar una cita existente y eliminar una cita por su ID. Cada ruta se asocia con su función correspondiente del controlador, asegurando una gestión adecuada de las solicitudes HTTP.
+    </div>
+    
+    <h3>Actividad - Añadiendo nuevo modulo a nuestro CRUD con MySql</h3>
+    <p>Crearemos una nueva tabla llamada 'usuarios' donde se trabajaran las mismas funciones para ingresar, mostrar, eliminar y modificar datos de nuestra base de datos.</p>
+    <img src="create-table-new.png" alt="">
+    
+    <p>Ahora en nuestro proyecto crearemos 3 archivos nuevos, estos serán necesarios para que nuestro nuevo modulo para <b><code>USUARIOS</code></b> funcione correctamente:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">Estructura de carpetas</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+↓ config
+    db.js
+↓ controllers 
+    CitasController.js
+    <b style="color: #cdb632c0">UsuariosController.js</b> // New
+↓ models 
+    Citas.js
+    <b style="color: #cdb632c0">Usuarios.js</b> // New
+→ node_modules
+↓ routes 
+    RouterCitas.js
+    <b style="color: #cdb632c0">RouterUsuarios.js</b> // New
+↓ src 
+    index.js
+  package-lock.json
+  package.json
+
+      </code>
+    </pre>
+
+    <p>Ahora en cuanto a la configuración de los archivos estos serian iguales a los anteriores usados para <b>citas</b> solo que aquí se le modificarían algunos nombres de variables y algunas rutas</p>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">controller/UsuariosController.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// controller/UsuariosController.js
+// Importamos el modelo 
+import Usuarios from '../model/Usuarios.js';
+
+// Creamos los métodos CRUD
+
+// Creamos una función para agregar usuarios
+export const agregarUser = async (req, res) => {
+  try {
+    await Usuarios.create(req.body)
+    res.json({msg: "Usuario creado con éxito 😎"});
+    
+  } catch (error) {
+    res.json ({msg: error.message});
+  }
+}
+
+// Función para mostrar todos lss usuarios
+export const getAllUser = async (req, res) =>{
+  try {
+    const usuarios = await Usuarios.findAll();
+    return res.json(usuarios);
+    
+  } catch (error) {
+    return res.json ({msg: error.message});
+  }
+}
+
+// Función para mostrar un usuario por ID
+export const getUser = async (req, res) => {
+  try {
+    let user = await Usuarios.findAll({where:{id:req.params.id}});
+    if (!user[0]){
+      return res.json({msg: "No se encontró el usuario con ese ID"});
+    }
+    await res.json(user[0]);
+  } catch (error) {
+      return res.json({msg: error.message})
+  }
+}
+
+// Función para modificar un usuario
+export const modificarUser = async (req, res) =>{
+  try {
+    let user = await Usuarios.update(req.body, { where:{id: req.params.id}})
+    if(!user[0]){
+      return res.json({msg: "El ID de usuario no es valido"})
+    }
+    await res.json({msg: "Se modifico un usuario"})
+    
+  } catch (error) {
+    return res.json({msg: error.message})
+  }
+}
+
+// Función para eliminar un usuario
+export const eliminarUser = async (req, res) => {
+  try {
+    let user = await Usuarios.findAll({where:{id: req.params.id}});
+    if (!user[0]){
+      res.json({msg: "No se encuentra el usuario para eliminar"});
+    }
+    await user[0].destroy();
+    res.json({msg: "Se elimino un usuario"})
+  } catch (error) {
+    res.json({msg: error.message})
+  }
+}
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código define un controlador para la gestión de usuarios. Importa el modelo Usuarios que representa la estructura de los usuarios en la base de datos. Ofrece funciones para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre estos usuarios. La función agregarUser permite agregar un nuevo usuario a la base de datos. getAllUser recupera todos los usuarios existentes. getUser obtiene un usuario específico por su ID. modificarUser actualiza la información de un usuario existente. Finalmente, eliminarUser elimina un usuario por su ID. Cada función maneja posibles errores y retorna mensajes correspondientes en caso de éxito o fallo en la operación.
+    </div>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">model/Usuarios.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// model/Usuarios.js
+// Importamos la conexión a la BD
+import BD from "../config/db.js";
+import { DataTypes } from "sequelize";
+
+const Usuarios = BD.define('usuarios', {
+
+  nombre_user : 
+  {
+    type: DataTypes.STRING, 
+    allowNull:false
+  },
+
+  edad : 
+  {
+    type: DataTypes.STRING, 
+    allowNull:false
+  },
+  
+  doctor: 
+  {
+    type: DataTypes.STRING, 
+    allowNull:false
+  }
+});
+
+export default Usuarios;
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código define un modelo Usuarios que representa la estructura de la tabla de usuarios en la base de datos. Utiliza Sequelize para definir los campos y tipos de datos que tendrá la tabla. Los campos incluyen nombre_user para el nombre del usuario, edad para la edad del usuario, y doctor para el tipo de doctor. Todos los campos son requeridos (allowNull: false), lo que significa que deben tener un valor antes de poder ser almacenados en la base de datos.
+    </div>
+
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">routes/RoutesUsuarios.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// routes/RoutesUsuarios.js
+// Importamos express
+import express from 'express';
+
+// Importamos nuestros controladores para nuestro nuevo mod.
+import {agregarUser} from '../controller/UsuariosController.js';
+import {getAllUser} from '../controller/UsuariosController.js';
+import {getUser} from '../controller/UsuariosController.js';
+import {modificarUser} from '../controller/UsuariosController.js';
+import {eliminarUser} from '../controller/UsuariosController.js';
+
+// Definimos las rutas para nuestro nuevo mod.
+const router = express.Router();
+router.post('/', agregarUser);
+router.get('/', getAllUser);
+router.get('/:id', getUser);
+router.put('/:id', modificarUser);
+router.delete('/:id', eliminarUser)
+
+export default router;
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código define las rutas para el módulo de usuarios utilizando Express. Importa las funciones del controlador UsuariosController.js para cada operación CRUD: agregar, obtener todos, obtener por ID, modificar y eliminar usuarios. Crea un router de Express y asigna las funciones correspondientes a cada ruta HTTP: POST para agregar un usuario, GET para obtener todos los usuarios y uno por ID, PUT para modificar un usuario y DELETE para eliminar un usuario. Finalmente, exporta el router para ser utilizado en la configuración principal de Express.
+    </div>
+
+    <p>Y ya para finalizar con esta parte importamos las rutas de nuestro modulo a nuestro index.js, quedando éste, configurado de la siguiente manera:</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">src/index.js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// src/index.js
+import express from "express";
+import cors from "cors";
+// Importamos la configuración de la BD
+import BD from '../config/db.js';
+
+// Importamos el archivo de las rutas 
+import citasRoutes from '../routes/RoutesCitas.js';
+// Importamos el archivo de las rutas de nuestro nuevo mod.
+import userRoutes from '../routes/RoutesUsuarios.js';
+
+// Definimos la variable para trabajar con Express
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+app.use('/citas', citasRoutes );
+app.use('/user', userRoutes );
+
+// Autenticación BD
+try {
+  await BD.authenticate();
+  console.log('Conexión con la base de datos exitosa. Puedes sonreír 😎');
+} catch (error) {
+  console.error('Unable to connect to the database:', error);
+}
+
+// Muestra mensaje en el navegador
+app.get('/', (req, res) => {
+  res.send("Hola mundo");
+})
+
+// Configuración del puerto del servidor
+app.listen(5000, () => {
+  console.log("El servidor esta corriendo ⚡ en http://localhost:5000/")
+});
+
+      </code>
+    </pre>
+    <div class="nota">
+      <span class="tag tag-nota">NOTA</span>
+      Este código configura un servidor Express que utiliza CORS para manejar solicitudes de diferentes dominios, y también middleware para analizar JSON en las solicitudes. Importa las rutas de dos módulos diferentes: RoutesCitas.js para citas y RoutesUsuarios.js para usuarios. Se autentica con la base de datos y muestra un mensaje de conexión exitosa o un error. Define una ruta principal que responde con "Hola mundo" y luego inicia el servidor en el puerto 5000, mostrando un mensaje de éxito en la consola.
+    </div>
+
+
+    <h3>Probando funcionalidad de nuestro nuevo modulo de <code>Usuarios</code></h3>
+    <p>Vas a comprobar con <b>Postam</b> que nuestro nuevo modulo de <code>Usuarios</code> funciona de forma correcta, empezando con :</p>
+    <h4>'agregarUser'</h4>
+    <p><img src="add-user.png" alt=""></p>
+    <h4>'getAllUser'</h4>
+    <p><img src="get-user.png" alt=""></p>
+    <h4>'getUser'</h4>
+    <p><img src="get-user-id.png" alt=""><img src="get-user-id-ERROR.png" alt=""></p>
+    <h4>modificarUser</h4>
+    <p><img src="update-user.png" alt=""><img src="update-user-check.png" alt=""></p>
+    <h4>eliminarUser</h4>
+    <p><img src="delete-user.png" alt=""><img src="delete-user-check.png" alt=""></p>
+
+    <p>Fin de la actividad y de nuestro <b><code>CRUD CON EXPRESS Y MYSQL</code></b></p>
+    <a href="https://github.com/4shc/backend-mysql">
+      <img src="../../img/github-icon-min-min.png" alt="github.com/4shc/backend-mongo">
+    </a>
+    <span>Mira el repositorio en Github</span>
+  
+  </article>
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion28.js" type="module"></script>
+</body>
+
+</html>

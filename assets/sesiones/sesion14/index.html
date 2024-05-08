@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style-general.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 17</title>
+  <!-- Formatear code. Agrega la hoja de estilo para el tema oscuro (por ejemplo, Dracula)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', (event) => { hljs.highlightAll(); })</script>
+</head>
+
+<body>
+  <nav class="nav heartbeat">
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="icono-hamburguesa"><span></span></label>  
+    <ul>
+      <li>Sesión 10</li>
+      <li><a href="../sesion10/index.html#and-or">And/Ord</a> </li>
+      <li><a href="../sesion10/index.html#switch">Switch</a> </li>
+      <li><a href="../sesion10/index.html#ciclo-for">For</a> </li>
+      <li><a href="../sesion10/index.html#for-of-in">For of/in</a> </li>
+      <li><a href="../sesion10/index.html#while">While</a> </li>
+      <li>Sesión 11</li>
+      <li><a href="../sesion11/index.html#while-ejer-multiplos">While Ejer</a> </li>
+      <li><a href="../sesion11/index.html#functions">Functions</a> </li>
+      <li><a href="../sesion11/index.html#function-anonima">Function Anon</a> </li>
+      <li><a href="../sesion11/index.html#function-arrow">Function Arrow</a> </li>
+      <li><a href="../sesion11/index.html#arrays-ejer">Arrays</a> </li>
+      <li><a href="../sesion11/index.html#for">For</a> </li>
+      <li><a href="../sesion11/index.html#foreach">Foreach</a> </li>
+      <li><a href="../sesion11/index.html#filter">Filter</a> </li>
+      <li>Sesión 12</li>
+      <li><a href="../sesion12/index.html#filter-ejer">Filter Ejer</a> </li>
+      <li><a href="../sesion12/index.html#promise">Promise</a> </li>
+      <li><a href="../sesion12/index.html#async-await">Async/Await</a> </li>
+      <li>Sesión 13</li>
+      <li><a href="../sesion13/index.html#promise-ejer">Promise Ejercicio</a> </li>
+      <li><a href="../sesion13/index.html#import-export">Import / Export</a> </li>
+      <li><a href="../sesion13/index.html#mod1-ppo">POO</a> </li>
+      <li>Sesión 14</li>
+      <li><a href="../sesion14/index.html#prototipos">Prototipos</a> </li>
+      <li>Sesión 15</li>
+      <li><a href="../sesion14/index.html#herencia">Herencia</a> </li>
+      <li><a href="../sesion15/index.html#herencia-ejer">Herencia Ejercicios</a> </li>
+      <li><a href="../sesion15/index.html#poliformismo">Poliformismo</a> </li>
+      <li>Sesión 16</li>
+      <li><a href="../sesion16/index.html#arrays-metodos">Array Métodos</a> </li>
+      <li><a href="../sesion16/index.html#arrays-fill">Array / fill() </a></li>
+      <li><a href="../sesion16/index.html#arrays-foreach">Array / forEach()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-filter">Array / filter()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-find">Array / find()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-map">Array / map()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-sort">Array / sort()</a> </li>
+      <li><a href="../sesion16/index.html#arrays-tosorted">Array / toSorted()</a> </li>
+      <li><a href="../sesion16/index.html#tarea-comparador">Tarea comparador</a> </li>
+      <li>Sesión 17</li>
+      <li><a href="../sesion17/index.html#arrays-some">Array / some()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-filter-include">Array / filter() + include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-every">Array / every()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-concat">Array / concat()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-include">Array / include()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-join">Array / join()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reduce">Array / reduce()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-index-of">Array / indexOf()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-find-index">Array / findIndex()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-shift">Array / shift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-unshift">Array / unshift()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-reverse">Array / reverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-toReverse">Array / toReverse()</a> </li>
+      <li><a href="../sesion17/index.html#arrays-splice">Array / splice()</a> </li>
+      <li>Sesión 18</li>
+      <li><a href="../sesion18/index.html#arrays-flat">Array / flat()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-isArray">Array / isArray()</a> </li>
+      <li><a href="../sesion18/index.html#arrays-from">Array / from()</a> </li>
+      <li><a href="../sesion18/index.html#rest-operador">Operador Rest</a> </li>
+      <li><a href="../sesion18/index.html#spread-operador">Operador Espread</a> </li>
+      <li>Sesión 19</li>
+      <li><a href="../sesion18/index.html#pilas">Pilas</a> </li>
+      <li><a href="../sesion19/index.html#pilas-ejer">Pilas Ejercicios</a> </li>
+      <li><a href="../sesion19/index.html#colas">Colas</a> </li>
+      <li><a href="../sesion19/index.html#listas-enlazadas">Listas enlazadas</a> </li>
+      <li><a href="../sesion19/index.html#tarea-lista-enlazada">Tarea listas enlazadas</a> </li>
+      <li>Sesión 20</li>
+      <li><a href="../sesion20/index.html#lista-enlazada-ejer">Lista enlazada ejercicios</a></li>
+      <li><a href="../sesion20/index.html#arbol-binario">Árbol binario</a></li>
+      <li>Sesión 21</li>
+      <li><a href="../sesion21/index.html#arboles-ejercicios">Árbol binario ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos">Grafos</a></li>
+      <li><a href="../sesion21/index.html#grafos-ejer">Grafos ejercicios</a></li>
+      <li><a href="../sesion21/index.html#grafos-bfs">Grafos / BFS</a></li>
+      <li><a href="../sesion21/index.html#grafos-dfs">Grafos / DFS</a></li>
+      <li><a href="../sesion21/index.html#algoritmo-busqueda-lineal">Algoritmos / búsqueda lineal</a></li>
+      <li>Sesión 22</li>
+      <li><a href="../sesion22/index.html#algoritmo-busqueda-lineal">Algoritmos / Búsqueda binaria</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-quicksort">Algoritmos / Quicksort</a></li>
+      <li><a href="../sesion22/index.html#algoritmo-mergesort">Algoritmos / MergeSort</a></li>
+      <li>Sesión 23</li>
+      <li><a href="../sesion23/index.html#algoritmo-bubble-sort">Algoritmos / Bubble Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-select-sort">Algoritmos / Select Sort</a></li>
+      <li><a href="../sesion23/index.html#algoritmo-insertion-sort">Algoritmos / Insertion Sort</a></li>
+      <li>Sesión 24</li>
+      <li><a href="../sesion24/index.html#algoritmo-radix-sort">Algoritmos / Radix Sort</a></li>
+      <li><a href="../sesion24/index.html#json-web-token">Json Web Token - Parte 1</a></li>
+      <li>Sesión 25</li>
+      <li><a href="../sesion25/index.html#json-web-token-dos">Json Web Token - Parte 2</a></li>
+      <li><a href="../sesion25/index.html#crud-express-mongodb-uno">CRUD / Express y MongoDB - Parte 1</a></li>
+      <li>Sesión 26</li>
+      <li><a href="../sesion26/index.html#crud-express-mongodb-dos">CRUD / Express y MongoDB - Parte 2</a></li>
+      <li>Sesión 27</li>
+      <li><a href="../sesion27/index.html#crud-express-mongodb-tres">CRUD / Express y MongoDB - Parte 3</a></li>
+      <li>Sesión 28</li>
+      <li><a href="../sesion28/index.html#crud-express-mysql-uno">CRUD / Express y MySql - Parte 1</a></li>
+      <li>Sesión 29</li>
+      <li><a href="../sesion29/index.html#crud-express-mysql-dos">CRUD / Express y MySql - Parte 2</a></li>
+      <li>Sesión 30</li>
+      <li><a href="../sesion30/index.html#react-uno">React - Parte 1</a></li>
+      <li>Sesión 31</li>
+      <li><a href="../sesion31/index.html#react-dos">React - Parte 2</a></li>
+      <li><a href="../sesion31/index.html#react-vite">React con Vite</a></li>
+      <li><a href="../sesion31/index.html#react-ejer-card-one">React - Ejercicio Cards - Parte 1</a></li>
+      <li>Sesión 32</li>
+      <li><a href="../sesion32/index.html#react-ejer-card-dos">React - Ejercicio Cards - Parte 2</a></li>
+      <li><a href="../sesion32/index.html#react-actividad">React - Actividad</a></li>
+      <li>Sesión 33</li>
+      <li><a href="../sesion33/index.html#react-hook">React - Hook</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-state">React - Hook {useState}</a></li>
+      <li><a href="../sesion33/index.html#react-hook-use-effect">React - Hook {useEffect}</a></li>
+    </ul>
+  </nav>
+  <h1>SESIÓN 14</h1>
+  <small class="fecha">26.03.2024 S14-M1</small>
+
+  <article id="prototipos">
+    <h2>Prototipos</h2>
+    <p>Son un mecanismo central que permite a los objetos compartir propiedades y métodos entre sí. Cada objeto en JavaScript tiene un prototipo asociado, que sirve como un modelo para el objeto y proporciona una cadena de búsqueda para propiedades y métodos que no se encuentran directamente en el objeto. Esta relación de prototipo facilita la herencia y la reutilización de código, lo que resulta en un código más eficiente y modular.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// función constructora
+function Persona (nombre, edad){
+  this.nombre = nombre;
+  this.edad = edad;
+
+}
+
+// Método fuera de la función constructora
+Persona.prototype.caminar = function (){
+  console.log("Debe caminar todos los Dias")
+}
+
+const Administrador = new Persona ("Raul Mesenes", 27);
+const mecanico = new Persona ("Brayan Dias", 37);
+
+console.log(Administrador);
+console.log(mecanico);
+
+      </code>
+    </pre>
+  </article>
+
+  <article id="herencia">
+    <h2>Herencia</h2>
+    <p>La herencia en JavaScript permite que los objetos adquieran propiedades y métodos de otros objetos, facilitando la reutilización de código y la organización modular. Esto se logra a través de la cadena de prototipos, permitiendo la creación de relaciones jerárquicas entre objetos de manera dinámica y flexible.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Creamos nuestra clase principal. 
+class Vehiculo{
+  constructor(marca, color, modelo, TipoC, cRuedas, Estado, cPersonas, cilindraje){
+    this.marca = marca;
+    this.color = color;
+    this.modelo = modelo;
+    this.TipoC = TipoC;
+    this.cRuedas = cRuedas;
+    this.Estado = Estado;
+    this.cPersonas = cPersonas;
+    this.cilindraje = cilindraje;
+  }
+
+  // Definimos sus métodos propios de la función 'vehiculo'
+  arrancar(){
+    console.log("El vehículo arranco");
+  }
+}
+
+
+// Creamos una clase que va a heredar atributos de 'vehiculo'
+class Carro extends Vehiculo{
+  constructor(marca, color, modelo, TipoC, cRuedas, Estado, cPersonas, cilindraje, nPuertas){
+    
+    super(marca, color, modelo, TipoC, cRuedas, Estado, cPersonas, cilindraje);
+    this.nPuertas = nPuertas;
+  }
+
+  abrirBaul(){
+    console.log("Se esta abriendo el baul");
+  }
+
+}
+
+
+const ford = new Carro("scape", "negro", 2024, "Disesel", 4, "nuevo", 5, 2400, 4);
+console.log(ford);
+ford.arrancar();
+ford.abrirBaul();
+
+      </code>
+    </pre>
+
+    <h3>Ejercicio practico - Herencia</h3>
+    <p>Crea una <code>clase principal</code> que herede a dos subclases sus propiedades y que tenga que ver con <code>contratación</code> y tipos de empleados.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js - Solución</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+
+// Definimos la clase principal:        
+class Contratacion {
+  constructor (nombre, cedula, contrato, salario, termino, empleador ){
+    this.nombre = nombre;
+    this.cedula = cedula;
+    this.contrato = contrato;
+    this.salario = salario;
+    this.termino = termino;
+    this.empleador = empleador;
+  }
+  // Con su respectivo método
+  contratado(){
+    console.log("Felicidades " + this.nombre + " estas contratado");
+  }
+}
+
+// Definimos la primer subclase que heredará parámetros de nuestra clase principal 
+  // 'Contratación'  a la cual  se le añaden sus propios atributos: 'eps' y 'pension'.
+class EmpleadoFijo extends Contratacion{
+  constructor(nombre, cedula, contrato, salario, termino, empleador, eps, pension){
+    super(nombre, cedula, contrato, salario, termino, empleador);
+    this.eps = eps;
+    this.pension = pension;
+  }
+
+  // También contiene su propio método independiente.
+  contratoFijo() {
+    console.log("Tu contrato es de tipo: '" + this.contrato + "' y tu salario es: '" 
+    + this.salario + "'");
+  }  
+
+}
+
+// Definimos la segunda subclase que heredará parámetros de nuestra clase principal 
+  // 'Contratación'  a la cual se le añaden sus propios atributos: 'cargo' y 'practicante'.
+class EmpleadoPrestacion extends Contratacion{
+  constructor(nombre, cedula, contrato, salario, termino, empleador, cargo, practicante){
+    super(nombre, cedula, contrato, salario, termino, empleador);
+    this.cargo = cargo;
+    this.practicante = practicante;
+  }
+
+  // También cuenta con su propio método.
+  contratadoPrestacion(){
+    console.log("Tu contrato es de tipo: '" + this.contrato + "' con un salario de: '" 
+    + this.salario + "'" );
+  }
+
+}
+
+// Instanciamos nuestro primer objeto para la subclase 'EmpleadoFijo'.
+const newEmpleado = new EmpleadoFijo("Bryan", 1022485632, "Indefinido", 1500000, 1, 
+"JuanIT", "Capital Salud", "Porvenir");
+console.log(newEmpleado); // Llamamos a dicho objeto por consola
+newEmpleado.contratado(); // Llamamos a el método que hereda de 'Contratacion'
+newEmpleado.contratoFijo(); // y por último también llamamos a su propio método.
+
+// Instanciamos nuestro segundo objeto para la subclase 'EmpleadoPrestacion'.
+const newEmpleado2 = new EmpleadoPrestacion("Carlos", 1135896322, "Prestación Servicios", 
+1300000, 0.6, "DianaIT", "Asistente", true);
+console.log(newEmpleado2); // Llamamos a dicho objeto por consola
+newEmpleado2.contratado(); // Llamamos a el método que hereda de 'Contratacion'
+newEmpleado2.contratadoPrestacion(); // y por último también llamamos a su propio método.
+
+      </code>
+    </pre>
+
+  </article>
+
+
+
+
+
+
+  
+ <!--  <article id="herencia-prototípica">
+    <h2>Herencia prototípica</h2>
+    <p>Es un mecanismo en el que los objetos pueden heredar propiedades y métodos de otros objetos a través de la cadena de prototipos. Cada objeto tiene un prototipo asociado y, cuando se busca una propiedad o método en un objeto y no se encuentra, JavaScript busca en su prototipo y en la cadena de prototipos para encontrarlo, permitiendo una estructura de herencia dinámica y flexible en el lenguaje.</p>
+    <pre class="dark">
+      <div class="pre-head">
+        <span class="tag js">js</span>
+        <button class="copy-button">📋 Copiar código</button>
+      </div>
+      <code class="language-js">
+// Herencia prototípica
+fun
+
+
+      </code>
+    </pre>
+  </article>
+
+ -->
+
+
+  <footer>
+    Bryan Hernández | Telento Tech DWFSV2-42 | 2024
+  </footer>
+  <script src="../../../js/js-general.js"></script>
+  <script src="sesion14.js" type="module"></script>
+</body>
+
+</html>
